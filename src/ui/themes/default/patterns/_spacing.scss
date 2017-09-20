@@ -1,0 +1,32 @@
+$spacing: (
+  generic-title-bundle: (
+    margin: 0,
+    margin-bottom: 20px,
+    padding: 0
+  ),
+  generic-button-bundle: (
+    padding-left: 10px,
+    padding-right: 10px
+  )
+);
+$spacing-placeholder-list: ();
+
+
+@mixin spacing($bundle-name) {
+  @each $bundle, $style in $spacing {
+    @if (index($spacing-placeholder-list, $bundle) == null) {
+      $spacing-placeholder-list: append($spacing-placeholder-list, #{$bundle}) !global;
+
+      @at-root %#{$bundle} {
+        $_properties: map-keys(map-get($spacing, $bundle));
+        $_values: map-values(map-get($spacing, $bundle));
+
+        @each $_property in $_properties {
+          #{$_property}: nth($_values, index($_properties, $_property));
+        }
+      }
+    }
+  }
+
+  @extend %#{$bundle-name} !optional;
+}

@@ -1,0 +1,23 @@
+$primary-colors: (
+  white: #fff,
+  black: #000,
+  project-grey: #666362,
+  project-red: #f62817,
+  project-blue: #659ec7
+);
+
+@function get-secondary-colors($primary-map, $amount) {
+  $_secondary-colors: ();
+
+  @each $_color, $_value in $primary-map {
+    // scss-lint:disable ColorVariable
+    @if $_value != #fff and $_value != #000 {
+      $_secondary-colors: map-merge($_secondary-colors, (#{$_color}-light: lighten($_value, $amount)));
+      $_secondary-colors: map-merge($_secondary-colors, (#{$_color}-dark: darken($_value, $amount)));
+    }
+    // scss-lint:enable ColorVariable
+  }
+  @return $_secondary-colors;
+}
+
+$colors: map-merge($primary-colors, get-secondary-colors($primary-colors, 30%));

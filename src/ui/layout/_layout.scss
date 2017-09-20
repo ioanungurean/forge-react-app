@@ -1,0 +1,25 @@
+@import 'xbem';
+
+$grid-size: 12;
+
+@include block(column) {
+  @for $first-index from 1 to $grid-size {
+    @for $second-index from 1 through $grid-size {
+      //example:  column__2__3  + column__1__3  make a full row  2/3 + 1/3 = 3/3 = 1
+      @include element(#{#{$first-index}__#{$second-index}}) {
+        width: round(percentage($first-index / $second-index));
+        display: flex;
+
+        @include state(hasscroll) {
+          flex-direction: column;
+          overflow-y: auto;
+        }
+      }
+    }
+  }
+}
+
+@include block(row) {
+  width: 1200px;
+  margin: 0 auto;
+}
