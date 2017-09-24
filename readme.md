@@ -1,15 +1,14 @@
-# React Kit
+# React Boilerplate
 
 ## Base App
 
-| Package       | Version     |
-| ------------- |-------------|
-| React         | ^15.16.1    |
-| Webpack       | ^3.4.1      |
-| Babel         | ^ES8        |
-| Yarn          | ^0.27.5     |
-| xbem          | ^0.0.6      |
-#
+| Package       |
+| ------------- |
+| React         |
+| Webpack       |
+| Babel         |
+| Yarn          |
+| xBEM          |
 
 ## Utilizing
 
