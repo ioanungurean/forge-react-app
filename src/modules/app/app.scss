@@ -1,5 +1,5 @@
 @import 'xbem';
 
-@include block('apps') {
+@include block('app') {
   background-color: red;
 }

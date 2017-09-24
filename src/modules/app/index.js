@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1 className="apps">React Kit</h1>
+        <h1 className="app">React Kit</h1>
       </div>
     );
   }
