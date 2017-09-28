@@ -4,10 +4,10 @@
 
 | Package       | Version     |
 | ------------- |-------------|
-| React         | ^15.16.1    |
-| Webpack       | ^3.4.1      |
+| React         | ^16.0.0     |
+| Webpack       | ^3.6.0      |
 | Babel         | ^ES8        |
-| Yarn          | ^0.27.5     |
+| Yarn          | ^1.1.0      |
 | xbem          | ^0.0.6      |
 #
 
