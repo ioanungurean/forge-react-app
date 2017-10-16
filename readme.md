@@ -6,10 +6,9 @@
 | ------------- |-------------|
 | React         | ^16.0.0     |
 | Webpack       | ^3.6.0      |
-| Babel         | ^ES8        |
+| Babel         | ^ES7        |
 | Yarn          | ^1.1.0      |
-| xbem          | ^0.0.6      |
-#
+| xbem          | ^0.0.8      |
 
 ## Utilizing
 
