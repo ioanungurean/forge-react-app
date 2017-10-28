@@ -4,11 +4,11 @@
 
 | Package       | Version     |
 | ------------- |-------------|
-| React         | ^16.0.0     |
-| Webpack       | ^3.6.0      |
+| React         | ^16.0.x     |
+| Webpack       | ^3.8.x      |
 | Babel         | ^ES7        |
-| Yarn          | ^1.1.0      |
-| xbem          | ^0.0.8      |
+| Yarn          | ^1.1.x      |
+| xbem          | ^0.0.x      |
 
 ## Utilizing
 
