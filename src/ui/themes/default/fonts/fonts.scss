@@ -1,15 +1,1 @@
-/**
- * Font face mixin : used for font icons
- */
-@mixin font-face($font-family, $file-path, $file-extensions: ('ttf'), $font-weight: 'normal', $font-style:'normal') {
-  @font-face {
-    font-family: unquote($font-family);
-    font-weight: $font-weight;
-    font-style: $font-style;
-    @each $extension in $file-extensions {
-      src: url('#{$file-path}.#{$extension}');
-    }
-  }
-}
-
-// @include font-face('Roboto', 'typography/Roboto-Regular');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');

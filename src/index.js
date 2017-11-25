@@ -6,4 +6,4 @@ import 'ui/layout';
 
 const App = () => (<Async load={import('modules/app')} />);
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App message={true} />, document.getElementById('root'));
