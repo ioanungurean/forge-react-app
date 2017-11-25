@@ -2,15 +2,15 @@
 
 ## Base App
 
-| Package       |
-| ------------- |
-| React         |
-| Webpack       |
-| Babel         |
-| Yarn          |
-| xBEM          |
+| Package       |Version|
+| ------------- |-------|
+| React         |^16.x.x|
+| Webpack       |^3.x.x |
+| Babel         |^6.x.x |
+| Yarn          |^1.x.x |
+| xBEM          |^0.x.x |
 
-## Utilizing
+## Using
 
 * [Scope Hoisting](https://github.com/dangodev/webpack-optimize-sample-project/tree/master/1-scope-hoisting)
 * Uglification of base app via `webpack -p`

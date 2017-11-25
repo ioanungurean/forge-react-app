@@ -44,6 +44,7 @@ module.exports = (config) => {
       contentBase: path.resolve('public'),
       historyApiFallback: true,
       hot: true,
+      inline: true,
       port: 9000,
     },
 

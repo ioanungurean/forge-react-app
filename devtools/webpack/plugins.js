@@ -18,7 +18,7 @@ module.exports = {
 
   HtmlWebpackPlugin:
     new HtmlWebpackPlugin({
-      title: 'React Kit',
+      title: 'React App',
       appMountId: 'root',
       inlineManifestWebpackName: 'webpackManifest',
       template: HtmlWebpackTemplate,

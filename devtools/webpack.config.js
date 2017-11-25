@@ -27,7 +27,7 @@ module.exports = (params) => {
           exclude: /node_modules/,
         },
         {
-          test: /\.(jpe?g|png|svg|gif|ico|json)$/,
+          test: /\.(jpe?g|png|svg|gif|ico|ttf|eot|json)$/,
           use: {
             loader: 'file-loader',
             options: { name: '[name].[hash].[ext]' },
@@ -37,7 +37,7 @@ module.exports = (params) => {
     },
 
     resolve: {
-      extensions: ['.js', '.json', '.scss', '.css'],
+      extensions: ['.js', '.json', '.css', '.scss'],
       modules: [path.resolve('src'), 'node_modules'],
       alias: {
         components: path.resolve('src/components/'),
