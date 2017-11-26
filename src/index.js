@@ -1,9 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Async from 'react-code-splitting';
+import { AppContainer } from 'react-hot-loader';
 
 import 'ui/layout';
 
-const App = () => (<Async load={import('modules/app')} />);
+import App from 'modules/app';
 
-ReactDOM.render(<App message={true} />, document.getElementById('root'));
+const render = (Component) => {
+  ReactDOM.render(
+    <AppContainer>
+      <Component />
+    </AppContainer>,
+    document.getElementById('root'),
+  );
+};
+
+render(App);
+
+if (module.hot) { module.hot.accept('modules/app', () => { render(App); }); }

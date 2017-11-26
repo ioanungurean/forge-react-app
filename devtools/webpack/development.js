@@ -34,6 +34,7 @@ module.exports = (config) => {
 
     output: {
       path: path.resolve(process.cwd(), 'public'),
+      publicPath: '/',
       filename: '[name].js',
     },
 
@@ -44,11 +45,11 @@ module.exports = (config) => {
       contentBase: path.resolve('public'),
       historyApiFallback: true,
       hot: true,
-      inline: true,
       port: 9000,
     },
 
     plugins: [
+      plugins.NamedModulesPlugin,
       plugins.HotModuleReplacementPlugin,
     ],
   };

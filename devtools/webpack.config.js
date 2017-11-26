@@ -15,7 +15,10 @@ module.exports = (params) => {
     context: path.resolve('src'),
 
     entry: {
-      index: path.resolve('src/index.js'),
+      index: [
+        'react-hot-loader/patch',
+        path.resolve('src/index.js')
+      ],
       vendor: ['react', 'react-dom'],
     },
 
