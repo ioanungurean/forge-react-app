@@ -17,7 +17,6 @@
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.1.1",
-    "react-code-splitting": "^1.2.1",
     "react-dom": "^16.1.1",
     "xbem": "^0.0.8"
   },
