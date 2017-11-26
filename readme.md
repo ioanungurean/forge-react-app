@@ -7,36 +7,34 @@
 ## Getting started
 
 1. `yarn start` or `npm start`
-> Runs the app in development mode.<br>
-> Open [http://localhost:9000](http://localhost:9000) to view it in the browser.
+Runs the app in development mode.<br>
+Open [http://localhost:9000](http://localhost:9000) to view it in the browser.
 
-> The page will automatically modify without reloading when you make changes to the code. (React Hot Loader) <br>
-> You will see the build errors and lint warnings in the console.
+The page will automatically modify without reloading when you make changes to the code. (React Hot Loader) <br>
+You will see the build errors and lint warnings in the console.
 
 2. `yarn test` or `npm test`
-
-> Runs the test watcher in an interactive mode.<br>
-> By default, runs tests related to files changed since the last commit.
+Runs the test watcher in an interactive mode.<br>
+By default, runs tests related to files changed since the last commit.
 
 3. `yarn build:prod` or `npm run build:prod`
+Builds the app for production to the `public` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-> Builds the app for production to the `public` folder.<br>
-> It correctly bundles React in production mode and optimizes the build for the best performance.
+The build is minified and the filenames include the hashes.<br>
 
-> The build is minified and the filenames include the hashes.<br>
-
-> Your app is ready to be deployed.
+Your app is ready to be deployed.
 
 4. `yarn analysis` or `npm run analysis` (Webpack Bundle Analyzer)
 
-> This script will help you:
-> * Realize what's really inside your bundle
-> * Find out what modules make up the most of it's size
-> * Find modules that got there by mistake
-> * Optimize it!
-> * And the best thing is it supports minified bundles! It parses them to get real size of bundled modules. And it also shows their gzipped sizes!
+This script will help you:
+* Realize what's really inside your bundle
+* Find out what modules make up the most of it's size
+* Find modules that got there by mistake
+* Optimize it!
+* And the best thing is it supports minified bundles! It parses them to get real size of bundled modules. And it also shows their gzipped sizes!
 
-> In order for this plugin to work you will also have to uncomment this line: `plugins.BundleAnalyzerPlugin` from `devtools > webpack > production.js`. Leave it as a comment when you are not using `analysis` script.
+> Note: In order for this plugin to work you will also have to uncomment this line: `plugins.BundleAnalyzerPlugin` from `devtools > webpack > production.js`. Leave it commented when you're not using `analysis` script.
 
 
 
