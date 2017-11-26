@@ -67,9 +67,10 @@ This script will help you:
 | Webpack       |^3.x.x  |
 | Babel         |^6.x.x  |
 | Yarn          |^1.x.x  |
-| xBEM          |^0.x.x  |
+| [xBEM][1]     |^0.x.x  |
 | Jest          |^21.x.x |
 | Enzyme        |^3.x.x  |
+[1]: https://github.com/bogdan-prisecaru/xbem
 
 ## Using
 
