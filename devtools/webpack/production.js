@@ -3,6 +3,11 @@ const plugins = require('./plugins');
 
 module.exports = (config) => {
   return {
+    entry: {
+      index: path.resolve('src/index.js'),
+      vendor: ['react', 'react-dom'],
+    },
+
     module: {
       rules: [
         {
