@@ -70,6 +70,7 @@ This script will help you:
 | [xBEM][1]     |^0.x.x  |
 | Jest          |^21.x.x |
 | Enzyme        |^3.x.x  |
+
 [1]: https://github.com/bogdan-prisecaru/xbem
 
 ## Using
