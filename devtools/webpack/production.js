@@ -25,13 +25,13 @@ module.exports = (config) => {
                     path.resolve(`src/ui/themes/${config.theme}`),
                     path.resolve(`src/ui/themes/${config.theme}/fonts`),
                     path.resolve(`src/ui/themes/${config.theme}/patterns`)
-                  ]
-                }
-              }
-            ]
-          })
-        }
-      ]
+                  ],
+                },
+              },
+            ],
+          }),
+        },
+      ],
     },
 
     output: {
@@ -41,7 +41,6 @@ module.exports = (config) => {
 
     // uncomment the line below if you need to run analysis
     plugins: [
-      plugins.ModuleConcatenationPlugin,
       plugins.HashedModuleIdsPlugin,
       plugins.WebpackChunkHash,
       plugins.ExtractTextPlugin,
