@@ -27,17 +27,20 @@ module.exports = {
       inject: false,
     }),
 
-    HashedModuleIdsPlugin:
+  HashedModuleIdsPlugin:
     new webpack.HashedModuleIdsPlugin(),
 
-    WebpackChunkHash:
+  WebpackChunkHash:
     new WebpackChunkHash(),
 
-    ExtractTextPlugin:
+  ExtractTextPlugin:
     new ExtractTextPlugin({
-      filename: '[name].[chunkhash].css',
-      allChunks: true,
-    }),
+    filename: '[name].[chunkhash].css',
+    allChunks: true,
+  }),
+
+  NamedModulesPlugin:
+    new webpack.NamedModulesPlugin(),
 
   HotModuleReplacementPlugin:
     new webpack.HotModuleReplacementPlugin(),
