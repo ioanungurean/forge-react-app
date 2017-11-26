@@ -3,6 +3,14 @@ const plugins = require('./plugins');
 
 module.exports = (config) => {
   return {
+    entry: {
+      index: [
+        'react-hot-loader/patch',
+        path.resolve('src/index.js')
+      ],
+      vendor: ['react', 'react-dom'],
+    },
+
     module: {
       rules: [
         {
@@ -41,7 +49,6 @@ module.exports = (config) => {
     devtool: 'source-map',
 
     devServer: {
-      compress: true,
       contentBase: path.resolve('public'),
       historyApiFallback: true,
       hot: true,

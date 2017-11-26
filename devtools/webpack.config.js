@@ -14,14 +14,6 @@ module.exports = (params) => {
   return merge({
     context: path.resolve('src'),
 
-    entry: {
-      index: [
-        'react-hot-loader/patch',
-        path.resolve('src/index.js')
-      ],
-      vendor: ['react', 'react-dom'],
-    },
-
     module: {
       rules: [
         {
