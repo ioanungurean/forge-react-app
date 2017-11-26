@@ -27,20 +27,21 @@ module.exports = {
       inject: false,
     }),
 
-  HotModuleReplacementPlugin:
-    new webpack.HotModuleReplacementPlugin(),
-
-  HashedModuleIdsPlugin:
+    HashedModuleIdsPlugin:
     new webpack.HashedModuleIdsPlugin(),
 
-  WebpackChunkHash:
+    WebpackChunkHash:
     new WebpackChunkHash(),
 
-  ExtractTextPlugin:
+    ExtractTextPlugin:
     new ExtractTextPlugin({
       filename: '[name].[chunkhash].css',
       allChunks: true,
     }),
 
-  BundleAnalyzerPlugin: new BundleAnalyzerPlugin(),
+  HotModuleReplacementPlugin:
+    new webpack.HotModuleReplacementPlugin(),
+
+  BundleAnalyzerPlugin:
+    new BundleAnalyzerPlugin(),
 };

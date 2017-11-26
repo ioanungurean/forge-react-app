@@ -4,6 +4,6 @@ import Async from 'react-code-splitting';
 
 import 'ui/layout';
 
-const App = (props) => (<Async load={import('modules/app')} componentProps={props} />);
+const App = () => (<Async load={import('modules/app')} />);
 
 ReactDOM.render(<App message={true} />, document.getElementById('root'));

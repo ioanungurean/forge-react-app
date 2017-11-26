@@ -16,7 +16,7 @@ module.exports = (params) => {
 
     entry: {
       index: path.resolve('src/index.js'),
-      vendor: ['react', 'react-dom', 'react-code-splitting'],
+      vendor: ['react', 'react-dom'],
     },
 
     module: {
