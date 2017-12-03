@@ -55,14 +55,24 @@
     "webpack-merge": "^4.1.1"
   },
   "jest": {
-    "moduleFileExtensions": ["js", "jsx"],
-    "moduleDirectories": ["node_modules", "src"],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
     "setupFiles": [
       "./devtools/test/temp-polyfill.js",
       "./devtools/test/jest.config.js"
     ],
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
-    "transform": {"^.+\\.jsx?$": "babel-jest"},
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "./devtools/test/mocks/file-mock.js",
       "^.+\\.(css|scss)$": "identity-obj-proxy"
