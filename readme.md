@@ -42,21 +42,25 @@ This script will help you:
 ## Folder Structure
 
 ```
-├─devtools
-│   └─webpack
-├─public
-└─src
-    ├─components
-    ├─lib
-    ├─modules
-    │   └─app
-    └─ui
-        ├─layout
-        └─themes
-            └─default
-                ├─fonts
-                │   └─icons
-                └─patterns
+├───devtools
+│   ├───test
+│   │   └───mocks
+│   └───webpack
+├───public
+└───src
+    ├───components
+    ├───gui
+    │   ├───layout
+    │   └───themes
+    │       └───default
+    │           ├───fonts
+    │           │   └───icons
+    │           └───patterns
+    ├───libs
+    └───modules
+        └───app
+            └───test
+                └───__snapshots__
 ```
 
 ## Base App
