@@ -37,7 +37,7 @@ module.exports = (params) => {
       alias: {
         components: path.resolve('src/components/'),
         modules: path.resolve('src/modules/'),
-        layout: path.resolve('src/ui/layout'),
+        layout: path.resolve('src/gui/layout'),
         libs: path.resolve('src/libs/'),
       },
     },

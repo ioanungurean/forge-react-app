@@ -1,5 +1,5 @@
 {
   "presets": [["env", {"modules": false}]],
-  "plugins": ["syntax-dynamic-import", "transform-react-jsx", "react-hot-loader/babel"],
+  "plugins": ["transform-react-jsx", "react-hot-loader/babel"],
   "env": {"test": {"presets": ["env"]}}
 }

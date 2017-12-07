@@ -2,9 +2,5 @@
 @import 'patterns';
 
 @include block(app) {
-  background-color: map-get($primary, ink);;
-
-  @include element(title) {
-    color: map-get($primary, white);
-  }
+  background-color: map-get($primary, ink);
 }
