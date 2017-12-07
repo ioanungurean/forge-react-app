@@ -6,7 +6,7 @@ import { AppContainer } from 'react-hot-loader';
 
 import App from 'modules/app';
 
-import 'ui/layout';
+import 'gui/layout';
 
 const CustomErrorReporter = ({ error }) => <Redbox error={error} />;
 

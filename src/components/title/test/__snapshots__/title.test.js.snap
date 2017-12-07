@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Title /> should render without throwing an error 1`] = `
+<h1
+  className="title"
+>
+  Test Title
+</h1>
+`;

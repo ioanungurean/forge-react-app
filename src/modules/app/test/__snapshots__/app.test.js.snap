@@ -4,10 +4,8 @@ exports[`<App /> should render without throwing an error 1`] = `
 <div
   className="app"
 >
-  <h1
-    className="app__title"
-  >
-    React App - Starter
-  </h1>
+  <Title
+    title="React App - Starter"
+  />
 </div>
 `;

@@ -1,0 +1,6 @@
+@import 'xbem';
+@import 'patterns';
+
+@include block(title) {
+  color: map-get($primary, white);
+}
