@@ -46,7 +46,7 @@ module.exports = (config) => {
       filename: '[name].js',
     },
 
-    devtool: 'source-map',
+    devtool: 'eval-source-map',
 
     devServer: {
       contentBase: path.resolve('public'),
