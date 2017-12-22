@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 
 import './title.style.scss';
 
-const Title = (props) => {
-  return (
-    <h1 className="title">
-      {props.title}
-    </h1>
-  );
+class Title extends Component {
+  render() {
+    return (
+      <h1 className="title">
+        {this.props.title}
+      </h1>
+    );
+  }
 };
 
 Title.displayName = 'Title';

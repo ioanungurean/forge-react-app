@@ -19,7 +19,7 @@ You will see the build errors and lint warnings in the console.
 Runs the test watcher in an interactive mode.<br>
 By default, runs tests related to files changed since the last commit.
 
-#### 3. `yarn build:prod` or `npm run build:prod`
+#### 3. `yarn build` or `npm build`
 
 Builds the app for production to the `public` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -43,21 +43,23 @@ This script will help you:
 
 ```
 ├───devtools
-│   ├───test
+│   ├───test                         // Jest and Enzyme config files
 │   │   └───mocks
-│   └───webpack
-├───public
+│   └───webpack                      // Webpack config files
 └───src
-    ├───components
-    ├───gui
+    ├───components                   // Reusable components
+    │   └───title
+    │       └───test
+    │           └───__snapshots__
+    ├───gui                          // Layout and theming
     │   ├───layout
     │   └───themes
     │       └───default
     │           ├───fonts
     │           │   └───icons
     │           └───patterns
-    ├───libs
-    └───modules
+    ├───libs                         // Custom reusable libraries
+    └───modules                      // Complex components that are not reusable even entire pages
         └───app
             └───test
                 └───__snapshots__
@@ -72,7 +74,7 @@ This script will help you:
 | Babel         |^6.x.x  |
 | Yarn          |^1.x.x  |
 | [xBEM][1]     |^0.x.x  |
-| Jest          |^21.x.x |
+| Jest          |^22.x.x |
 | Enzyme        |^3.x.x  |
 
 [1]: https://github.com/bogdan-prisecaru/xbem
