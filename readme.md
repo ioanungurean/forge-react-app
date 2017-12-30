@@ -59,7 +59,7 @@ This script will help you:
     │           │   └───icons
     │           └───patterns
     ├───libs                         // Custom reusable libraries
-    └───modules                      // Complex components that are not reusable or pages
+    └───modules                      // Complex components that are not reusable even entire pages
         └───app
             └───test
                 └───__snapshots__
