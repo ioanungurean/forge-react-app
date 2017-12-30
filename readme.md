@@ -43,21 +43,23 @@ This script will help you:
 
 ```
 ├───devtools
-│   ├───test
+│   ├───test                         // Jest and Enzyme config files
 │   │   └───mocks
-│   └───webpack
-├───public
+│   └───webpack                      // Webpack config files
 └───src
-    ├───components
-    ├───gui
+    ├───components                   // Reusable components
+    │   └───title
+    │       └───test
+    │           └───__snapshots__
+    ├───gui                          // Layout and theming
     │   ├───layout
     │   └───themes
     │       └───default
     │           ├───fonts
     │           │   └───icons
     │           └───patterns
-    ├───libs
-    └───modules
+    ├───libs                         // Custom reusable libraries
+    └───modules                      // Complex components that are not reusable or pages
         └───app
             └───test
                 └───__snapshots__
