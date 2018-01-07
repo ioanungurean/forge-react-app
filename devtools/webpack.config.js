@@ -25,7 +25,10 @@ module.exports = (params) => {
           test: /\.(jpe?g|png|svg|gif|ico|ttf|eot|json)$/,
           use: {
             loader: 'file-loader',
-            options: { name: '[name].[hash].[ext]' },
+            options: {
+              name: '[name].[hash].[ext]',
+              outputPath: 'resources/'   ,
+            },
           },
         },
       ],

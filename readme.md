@@ -2,11 +2,11 @@
 
 ## Install
 
-#### `yarn install` or `npm install`
+#### `npm install` or `yarn install`
 
 ## Getting started
 
-#### 1. `yarn start` or `npm start`
+#### 1. `npm start` or `yarn start`
 
 Runs the app in development mode.<br>
 Open [http://localhost:9000](http://localhost:9000) to view it in the browser.
@@ -14,12 +14,12 @@ Open [http://localhost:9000](http://localhost:9000) to view it in the browser.
 The page will automatically modify without reloading when you make changes to the code. (React Hot Loader) <br>
 You will see the build errors and lint warnings in the console.
 
-#### 2. `yarn test` or `npm test`
+#### 2. `npm run test` or `yarn test`
 
 Runs the test watcher in an interactive mode.<br>
 By default, runs tests related to files changed since the last commit.
 
-#### 3. `yarn build` or `npm build`
+#### 3. `npm run build` or `yarn build`
 
 Builds the app for production to the `public` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -28,7 +28,7 @@ The build is minified and the filenames include the hashes.<br>
 
 Your app is ready to be deployed.
 
-#### 4. `yarn analysis` or `npm run analysis` (Webpack Bundle Analyzer)
+#### 4. `npm run analysis` or `yarn analysis` (Webpack Bundle Analyzer)
 
 This script will help you:
 * Realize what's really inside your bundle
