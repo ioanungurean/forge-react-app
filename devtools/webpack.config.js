@@ -22,14 +22,17 @@ module.exports = (params) => {
           exclude: /node_modules/,
         },
         {
-          test: /\.(jpe?g|png|svg|gif|ico|ttf|eot|json)$/,
-          use: {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[hash].[ext]',
-              outputPath: 'resources/'   ,
+          test: /\.(jpe?g|png|svg|gif|ico|ttf|eot)$/,
+          exclude: /node_modules/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[hash].[ext]',
+                outputPath: 'resources/',
+              },
             },
-          },
+          ],
         },
       ],
     },
