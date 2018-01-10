@@ -92,3 +92,8 @@ This script will help you:
 
 ![alt text](https://s2.postimg.org/wvrsiiz5l/bundle-size.png 'Bundle Size')
 #
+
+## Thank You
+
+* [Bogdan Prisecaru (@bogdan-prisecaru)](https://github.com/bogdan-prisecaru)
+
