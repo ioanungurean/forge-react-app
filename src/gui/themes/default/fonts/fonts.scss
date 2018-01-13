@@ -1,12 +1,1 @@
-@mixin font-face($font-family, $file-path, $file-extensions: ('ttf'), $font-weight: 'normal', $font-style:'normal') {
-  @font-face {
-    font-family: unquote($font-family);
-    font-weight: $font-weight;
-    font-style: $font-style;
-    @each $extension in $file-extensions {
-      src: url('#{$file-path}.#{$extension}');
-    }
-  }
-}
-
-@include font-face('Roboto', '/fonts/typography/Roboto-Regular');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
