@@ -18,8 +18,8 @@ module.exports = (params) => {
       rules: [
         {
           test: /\.js$/,
-          use: 'babel-loader',
           exclude: /node_modules/,
+          use: 'babel-loader',
         },
         {
           test: /\.(jpe?g|png|svg|gif|ico|ttf|eot)$/,
@@ -29,7 +29,8 @@ module.exports = (params) => {
               loader: 'file-loader',
               options: {
                 name: '[name].[hash].[ext]',
-                outputPath: 'resources/',
+                outputPath: 'resources',
+                publicPath: path.resolve('dist'),
               },
             },
           ],
@@ -41,10 +42,10 @@ module.exports = (params) => {
       extensions: ['.js', '.json', '.css', '.scss'],
       modules: [path.resolve('src'), 'node_modules'],
       alias: {
-        components: path.resolve('src/components/'),
-        modules: path.resolve('src/modules/'),
+        components: path.resolve('src/components'),
+        modules: path.resolve('src/modules'),
         layout: path.resolve('src/gui/layout'),
-        libs: path.resolve('src/libs/'),
+        libs: path.resolve('src/libs'),
       },
     },
 

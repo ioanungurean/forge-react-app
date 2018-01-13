@@ -21,7 +21,7 @@ module.exports = (config) => {
                 loader: 'sass-loader',
                 options: {
                   includePaths: [
-                    path.resolve('node_modules/xbem/src/'),
+                    path.resolve('node_modules/xbem/src'),
                     path.resolve(`src/gui/themes/${config.theme}`),
                     path.resolve(`src/gui/themes/${config.theme}/fonts`),
                     path.resolve(`src/gui/themes/${config.theme}/patterns`)
