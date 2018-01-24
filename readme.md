@@ -37,8 +37,6 @@ This script will help you:
 * Optimize it!
 * And the best thing is it supports minified bundles! It parses them to get real size of bundled modules. And it also shows their gzipped sizes!
 
-> Note: In order for this plugin to work you will also have to uncomment this line: `plugins.BundleAnalyzerPlugin` from `devtools > webpack > production.js`. Leave it commented when you're not using `analysis` script.
-
 ## Folder Structure
 
 ```

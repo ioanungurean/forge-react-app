@@ -1,6 +1,6 @@
 {
   "name": "react-app",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "react-app",
   "main": "index.js",
   "author": "Ioan Ungurean",
@@ -15,7 +15,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "preanalysis": "rimraf public | rimraf bundle-analysis-stats.json",
-    "analysis": "webpack -p --config devtools/webpack.config --profile --json > bundle-analysis-stats.json --env.environment=production",
+    "analysis": "webpack -p --config devtools/webpack.config --profile --json > bundle-analysis-stats.json --env.environment=production --env.analysis=true",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "precommit-msg": [
