@@ -35,9 +35,9 @@ module.exports = {
 
   ExtractTextPlugin:
     new ExtractTextPlugin({
-    filename: '[name].[chunkhash].css',
-    allChunks: true,
-  }),
+      filename: '[name].[chunkhash].css',
+      allChunks: true,
+    }),
 
   NamedModulesPlugin:
     new webpack.NamedModulesPlugin(),

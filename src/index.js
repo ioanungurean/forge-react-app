@@ -5,8 +5,6 @@ import { AppContainer } from 'react-hot-loader';
 
 import App from 'modules/app';
 
-import 'gui/layout';
-
 const render = (Component) => {
   ReactDOM.render(
     <AppContainer>

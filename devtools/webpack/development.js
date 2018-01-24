@@ -29,6 +29,7 @@ module.exports = (config) => {
                 sourceMap: true,
                 includePaths: [
                   path.resolve('node_modules/xbem/src'),
+                  path.resolve(`src/gui/layout`),
                   path.resolve(`src/gui/themes/${config.theme}`),
                   path.resolve(`src/gui/themes/${config.theme}/fonts`),
                   path.resolve(`src/gui/themes/${config.theme}/patterns`),
