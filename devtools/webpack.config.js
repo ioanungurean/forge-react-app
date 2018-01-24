@@ -6,9 +6,11 @@ module.exports = (params) => {
   const config = {
     environment: (params && params.environment) ? params.environment : 'development',
     theme: (params && params.theme) ? params.theme : 'default',
+    analysis: (params && params.analysis) ? params.analysis : false,
   };
 
   console.info('*** Environment', config.environment);
+  console.info('*** Analysis', config.analysis);
   console.info('*** Theme', config.theme);
 
   return merge({

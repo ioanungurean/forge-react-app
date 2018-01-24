@@ -40,12 +40,11 @@ module.exports = (config) => {
       filename: '[name].[chunkhash].js',
     },
 
-    // uncomment the line below if you need to run analysis
     plugins: [
+      ...(config.analysis ? [ plugins.BundleAnalyzerPlugin ] : []),
       plugins.HashedModuleIdsPlugin,
       plugins.WebpackChunkHash,
       plugins.ExtractTextPlugin,
-      // plugins.BundleAnalyzerPlugin,
     ],
   };
 };
