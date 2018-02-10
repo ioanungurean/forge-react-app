@@ -44,7 +44,7 @@ module.exports = (config) => {
     output: {
       path: path.resolve(process.cwd(), 'public'),
       publicPath: '/',
-      filename: '[name].js',
+      filename: '[name].[hash].js',
     },
 
     devtool: 'eval-source-map',
