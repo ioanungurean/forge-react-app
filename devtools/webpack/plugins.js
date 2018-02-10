@@ -13,9 +13,6 @@ module.exports = {
       name: 'vendor',
     }),
 
-  ModuleConcatenationPlugin:
-    new webpack.optimize.ModuleConcatenationPlugin(),
-
   HtmlWebpackPlugin:
     new HtmlWebpackPlugin({
       title: 'React App',

@@ -31,8 +31,6 @@ module.exports = (params) => {
               loader: 'file-loader',
               options: {
                 name: '[name].[hash].[ext]',
-                outputPath: 'resources',
-                publicPath: path.resolve('dist'),
               },
             },
           ],
@@ -52,7 +50,6 @@ module.exports = (params) => {
 
     plugins: [
       plugins.CommonsChunkPlugin,
-      plugins.ModuleConcatenationPlugin,
       plugins.HtmlWebpackPlugin,
     ],
   }, require('./webpack/' + config.environment)(config));
