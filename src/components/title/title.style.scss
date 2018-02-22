@@ -2,5 +2,6 @@
 @import 'patterns';
 
 @include block(title) {
+  text-align: center;
   color: map-get($primary, white);
 }
