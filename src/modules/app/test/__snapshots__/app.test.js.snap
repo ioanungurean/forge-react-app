@@ -4,6 +4,11 @@ exports[`<App /> should render without throwing an error 1`] = `
 <div
   className="app"
 >
+  <img
+    alt="React App - Starter"
+    className="app__cover"
+    src="test-file-stub"
+  />
   <Title
     title="React App - Starter"
   />

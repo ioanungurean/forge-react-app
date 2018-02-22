@@ -3,5 +3,20 @@
 @import 'patterns';
 
 @include block(app) {
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100vh;
+
   background-color: map-get($primary, ink);
+
+  justify-content: center;
+  align-items: center;
+
+  @include element(cover) {
+    max-width: 20vw;
+    max-height: 20vh;
+    padding: map-get($sizes, padding-large);
+  }
 }
