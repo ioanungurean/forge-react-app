@@ -8,11 +8,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
-  CommonsChunkPlugin:
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-    }),
-
   HtmlWebpackPlugin:
     new HtmlWebpackPlugin({
       title: 'React App',
@@ -35,9 +30,6 @@ module.exports = {
       filename: '[name].[chunkhash].css',
       allChunks: true,
     }),
-
-  NamedModulesPlugin:
-    new webpack.NamedModulesPlugin(),
 
   HotModuleReplacementPlugin:
     new webpack.HotModuleReplacementPlugin(),

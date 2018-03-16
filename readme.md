@@ -69,10 +69,10 @@ This script will help you:
 | ------------- |--------|
 | React         |^16.x.x |
 | [xBEM][1]     |^0.x.x  |
-| Jest          |^22.x.x |
+| Jest          |^23.x.x |
 | Enzyme        |^3.x.x  |
 | Babel         |^6.x.x  |
-| Webpack       |^3.x.x  |
+| Webpack       |^4.x.x  |
 
 [1]: https://github.com/bogdan-prisecaru/xbem
 

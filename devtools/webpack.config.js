@@ -50,8 +50,14 @@ module.exports = (params) => {
     },
 
     plugins: [
-      plugins.CommonsChunkPlugin,
       plugins.HtmlWebpackPlugin,
     ],
+
+    optimization: {
+      splitChunks: {
+          name: 'vendor',
+          chunks: 'all',
+      },
+    },
   }, require('./webpack/' + config.environment)(config));
 };
