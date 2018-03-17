@@ -1,6 +1,6 @@
 {
   "name": "react-app",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "react-app",
   "main": "index.js",
   "author": "Ioan Ungurean",
@@ -8,7 +8,7 @@
   "scripts": {
     "prebuild:dev": "rimraf public",
     "build:dev": "webpack --config devtools/webpack.config --mode development",
-    "start": "webpack-dev-server --config devtools/webpack.config --mode development",
+    "start": "webpack-dev-server --config devtools/webpack.config --mode development --open",
     "prebuild": "rimraf public",
     "build": "webpack --config devtools/webpack.config --env.environment=production --mode production",
     "test": "jest",
@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
-    "babel-jest": "^23.0.0-alpha.0",
+    "babel-jest": "^22.4.1",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.1",
@@ -44,7 +44,7 @@
     "html-webpack-plugin": "^3.0.6",
     "html-webpack-template": "^6.1.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^23.0.0-alpha.0",
+    "jest": "^22.4.2",
     "node-sass": "^4.8.2",
     "path": "^0.12.7",
     "pre-commit": "^1.2.2",
