@@ -78,12 +78,11 @@ This script will help you:
 
 ## Using
 
-* [Scope Hoisting](https://github.com/dangodev/webpack-optimize-sample-project/tree/master/1-scope-hoisting)
-* Uglification of base app via `webpack -p`
+* Scope Hoisting
+* Uglification of base app via `webpack --mode production`
 * [React Hot Loader](https://github.com/gaearon/react-hot-loader)
-* [Deterministic Hashes](https://github.com/dangodev/webpack-optimize-sample-project/tree/master/4-deterministic-hashes)
-* [Commons Chunk Plugin](https://github.com/dangodev/webpack-optimize-sample-project/tree/master/5-commons-chunk)
-* [Webpack Bundle Analyzer](https://github.com/dangodev/webpack-optimize-sample-project/tree/master/7-webpack-bundle-analyzer)
+* Deterministic Hashes
+* [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
 
 ## App's Size In Production
 
