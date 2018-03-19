@@ -1,7 +1,8 @@
-# React Boilerplate
+# Lightweight React boilerplate using Webpack 4
+###### The production build is 5X smaller than [Create React App](https://github.com/facebook/create-react-app)
 
 ## Install
-
+Clone this project and run:
 #### `npm install` or `yarn install`
 
 ## Getting started
