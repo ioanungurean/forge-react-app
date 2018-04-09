@@ -1,5 +1,5 @@
 # Lightweight React boilerplate using Webpack 4
-###### The production build is 5X smaller than [Create React App](https://github.com/facebook/create-react-app)
+> Highly scalable architecture with a production build 4 times smaller than [Create React App](https://github.com/facebook/create-react-app)
 
 ## Install
 Clone this project and run:
@@ -88,9 +88,12 @@ This script will help you:
 ## App's Size In Production
 
 ![alt text](https://s2.postimg.org/wvrsiiz5l/bundle-size.png 'Bundle Size')
-#
 
 ## Thank You
 
 * [Bogdan Prisecaru (@bogdan-prisecaru)](https://github.com/bogdan-prisecaru)
 
+## Feedback and Suggestions
+> If you want to leave some suggestions or give me constructive feedback please don't hesitate to open an issue I will gladdly look into into it.
+
+>Thank you for your time! :wink:
