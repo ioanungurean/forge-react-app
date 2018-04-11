@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
 import { AppContainer } from 'react-hot-loader';
 
-import App from 'modules/app';
+import App from 'modules/app/app.module';
 
 const render = (Component) => {
   ReactDOM.render(
@@ -16,4 +15,4 @@ const render = (Component) => {
 
 render(App);
 
-if (module.hot) { module.hot.accept('modules/app', () => { render(App); }); }
+if (module.hot) { module.hot.accept('modules/app/app.module', () => { render(App); }); }

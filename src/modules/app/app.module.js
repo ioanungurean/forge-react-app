@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Title from 'components/title';
+import Title from 'components/title/title.component';
 
 import './app.style.scss';
 import cover from 'gui/assets/images/cover.svg';
