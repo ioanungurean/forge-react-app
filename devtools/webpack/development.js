@@ -3,8 +3,6 @@ const plugins = require('./plugins');
 
 module.exports = (config) => {
   return {
-    mode: 'development',
-
     entry: {
       index: [
         'react-hot-loader/patch',

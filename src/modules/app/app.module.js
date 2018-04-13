@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { hot } from 'react-hot-loader';
+
 import Title from 'components/title/title.component';
 
 import './app.style.scss';
@@ -16,4 +18,4 @@ class App extends Component {
 }
 
 App.displayName = 'App';
-export default App;
+export default hot(module)(App);
