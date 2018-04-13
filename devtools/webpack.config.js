@@ -16,6 +16,8 @@ module.exports = (params) => {
   return merge({
     context: path.resolve('src'),
 
+    mode: config.environment,
+
     module: {
       rules: [
         {
