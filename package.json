@@ -1,22 +1,22 @@
 {
   "name": "react-app",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "react-app",
   "main": "index.js",
   "author": "Ioan Ungurean",
   "license": "MIT",
   "scripts": {
     "prebuild:dev": "rimraf public",
-    "build:dev": "webpack --config devtools/webpack.config --mode development",
-    "start": "webpack-dev-server --config devtools/webpack.config --mode development --open",
+    "build:dev": "webpack --config devtools/webpack.config",
+    "start": "webpack-dev-server --config devtools/webpack.config --open",
     "prebuild": "rimraf public",
-    "build": "webpack --config devtools/webpack.config --env.environment=production --mode production",
+    "build": "webpack --config devtools/webpack.config --env.environment=production",
     "test": "jest",
     "test:update": "jest --updateSnapshot",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "preanalysis": "rimraf public | rimraf bundle-analysis-stats.json",
-    "analysis": "webpack --config devtools/webpack.config --profile --json > bundle-analysis-stats.json --env.environment=production --env.analysis=true --mode production",
+    "analysis": "webpack --config devtools/webpack.config --profile --json > bundle-analysis-stats.json --env.environment=production --env.analysis=true",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "precommit-msg": [
