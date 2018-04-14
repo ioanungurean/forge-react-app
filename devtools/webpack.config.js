@@ -26,8 +26,7 @@ module.exports = (params) => {
           use: 'babel-loader',
         },
         {
-          test: /\.(jpe?g|png|svg|gif|ico|ttf|eot)$/,
-          exclude: /node_modules/,
+          test: /\.(jpe?g|png|svg|gif|ico|ttf|woff|woff2|eot)$/,
           use: [
             {
               loader: 'file-loader',
