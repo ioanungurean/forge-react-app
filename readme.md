@@ -87,7 +87,9 @@ This script will help you:
 
 ## App's Size In Production
 
-![alt text](https://s2.postimg.org/wvrsiiz5l/bundle-size.png 'Bundle Size')
+* All (36 KB)
+* vendor.ae9379741f871b6ba2be.js (34.11 KB)
+* index.1f1cbf641d603d86f8ee.js (1.89 KB)
 
 ## Thank You
 
