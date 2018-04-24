@@ -1,87 +1,17 @@
 {
-  "name": "react-app",
-  "version": "2.1.0",
-  "description": "react-app",
+  "name": "forge-react-app",
+  "version": "1.0.0",
+  "description": "Forge React App: Lightweight React boilerplate using Webpack 4",
   "main": "index.js",
   "author": "Ioan Ungurean",
-  "license": "MIT",
+  "bin": {
+    "forge-react-app": "./tasks/fra.js"
+  },
   "scripts": {
-    "prebuild:dev": "rimraf public",
-    "build:dev": "webpack --config devtools/webpack.config",
-    "start": "webpack-dev-server --config devtools/webpack.config --open",
-    "prebuild": "rimraf public",
-    "build": "webpack --config devtools/webpack.config --env.environment=production",
-    "test": "jest",
-    "test:update": "jest --updateSnapshot",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "preanalysis": "rimraf public | rimraf bundle-analysis-stats.json",
-    "analysis": "webpack --config devtools/webpack.config --profile --json > bundle-analysis-stats.json --env.environment=production --env.analysis=true",
-    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "precommit-msg": [
-    "precommit-msg",
-    "test"
-  ],
+  "license": "MIT",
   "dependencies": {
-    "prop-types": "^15.6.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "xbem": "^0.0.8"
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-jest": "^22.4.3",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
-    "css-loader": "^0.28.11",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.3",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "file-loader": "^1.1.11",
-    "html-webpack-plugin": "^3.2.0",
-    "html-webpack-template": "^6.2.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^22.4.3",
-    "node-sass": "^4.8.3",
-    "path": "^0.12.7",
-    "pre-commit": "^1.2.2",
-    "react-hot-loader": "^4.1.0",
-    "react-test-renderer": "^16.3.2",
-    "rimraf": "^2.6.2",
-    "sass-loader": "^6.0.7",
-    "style-loader": "^0.20.3",
-    "webpack": "^4.6.0",
-    "webpack-bundle-analyzer": "^2.11.1",
-    "webpack-chunk-hash": "^0.6.0",
-    "webpack-cli": "^2.0.14",
-    "webpack-dev-server": "^3.1.3",
-    "webpack-merge": "^4.1.2"
-  },
-  "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "jsx"
-    ],
-    "moduleDirectories": [
-      "node_modules",
-      "src"
-    ],
-    "setupFiles": [
-      "./devtools/test/temp-polyfill.js",
-      "./devtools/test/jest.config.js"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest"
-    },
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/devtools/test/mocks/file-mock.js",
-      "^.+\\.(css|scss)$": "identity-obj-proxy"
-    }
+    "inquirer": "^5.2.0"
   }
 }
