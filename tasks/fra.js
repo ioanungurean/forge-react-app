@@ -19,11 +19,14 @@ const questions = [
 inquirer.prompt(questions).then((answers) => {
   const appChoice = answers['app-choice'];
   const appName = process.argv[2] ? process.argv[2] : defaultAppName;
+  const appDir = `${currDir}/${appName}`;
   const templatePath = `${__dirname}/../templates/${appChoice}`;
 
-  fs.mkdirSync(`${currDir}/${appName}`);
+  fs.mkdirSync(appDir);
 
   createDirectoryContents(templatePath, appName);
+
+  fs.renameSync(`${appDir}/gitignore`, `${appDir}/.gitignore`);
 });
 
 function createDirectoryContents(templatePath, newAppPath) {
