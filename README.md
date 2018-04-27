@@ -140,7 +140,7 @@ forge-react-app my-app
 * Deterministic Hashes
 * [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
 
-## App's size in production
+## App's size in production (gzip)
 * All (36 KB)
 * vendor.ae9379741f871b6ba2be.js (34.11 KB)
 * index.1f1cbf641d603d86f8ee.js (1.89 KB)
