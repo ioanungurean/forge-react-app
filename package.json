@@ -1,12 +1,12 @@
 {
   "name": "forge-react-app",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Forge React App: Lightweight React boilerplate using Webpack 4",
   "main": "index.js",
   "author": "Ioan Ungurean",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/ioanungurean/forge-react-app"
+    "type": "git",
+    "url": "https://github.com/ioanungurean/forge-react-app"
   },
   "bin": {
     "forge-react-app": "./tasks/fra.js"
