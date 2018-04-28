@@ -10,8 +10,10 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <img className="app__cover" src={cover} alt="React App - Starter"/>
-        <Title title="React App - Starter" />
+        <img className="app__cover" src={cover} alt="Forge React App"/>
+        <a className="app__link"href="https://github.com/ioanungurean/forge-react-app">
+          <Title title="Forge React App" />
+        </a>
       </div>
     );
   }

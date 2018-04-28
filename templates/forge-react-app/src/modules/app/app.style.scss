@@ -19,4 +19,12 @@
     max-height: 20vh;
     padding: map-get($sizes, padding-large);
   }
+
+  @include element(link) {
+    text-decoration: none;
+
+    >:hover {
+      color: map-get($primary, white);
+    }
+  }
 }

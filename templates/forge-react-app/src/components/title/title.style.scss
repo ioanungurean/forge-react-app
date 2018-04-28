@@ -2,6 +2,7 @@
 @import 'patterns';
 
 @include block(title) {
+  font-weight: 400;
   text-align: center;
-  color: map-get($primary, white);
+  color: map-get($primary, react);
 }
