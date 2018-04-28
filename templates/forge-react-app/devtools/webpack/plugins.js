@@ -1,10 +1,12 @@
 const webpack = require('webpack');
 const path = require('path');
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const HtmlWebpackTemplate = require('html-webpack-template');
 const WebpackChunkHash = require('webpack-chunk-hash');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const HtmlWebpackTemplate = require('html-webpack-template');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
@@ -25,10 +27,23 @@ module.exports = {
   WebpackChunkHash:
     new WebpackChunkHash(),
 
-  ExtractTextPlugin:
-    new ExtractTextPlugin({
-      filename: '[name].[chunkhash].css',
-      allChunks: true,
+  MiniCssExtractPlugin:
+    new MiniCssExtractPlugin({
+      filename: '[name].[hash].css',
+      chunkFilename: '[id].[hash].css',
+    }),
+
+  MiniCssExtractPluginLoader:
+    MiniCssExtractPlugin.loader,
+
+  OptimizeCSSAssetsPlugin:
+    new OptimizeCSSAssetsPlugin({}),
+
+  UglifyJsPlugin:
+    new UglifyJsPlugin({
+      cache: true,
+      parallel: true,
+      sourceMap: true,
     }),
 
   HotModuleReplacementPlugin:
