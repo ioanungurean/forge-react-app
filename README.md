@@ -11,7 +11,6 @@ If something doesn’t work, please [file an issue](https://github.com/ioanungur
 ```sh
 npx forge-react-app my-app
 cd my-app
-npm install
 npm start
 ```
 
@@ -76,9 +75,6 @@ cd my-app
 ```
 
 Inside the newly created project, you can run some built-in commands:
-
-#### `npm install` or `yarn install`
-Install all modules listed as dependencies in `package.json`.
 
 #### `npm start` or `yarn start`
 Runs the app in development mode.<br>

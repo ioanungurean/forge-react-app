@@ -2,6 +2,8 @@
 
 const fs = require('fs');
 const inquirer = require('inquirer');
+const chalk = require('chalk');
+const execSync = require('child_process').execSync;
 
 const defaultAppName = 'forge-react-app';
 const currDir = process.cwd();
@@ -19,14 +21,36 @@ const questions = [
 inquirer.prompt(questions).then((answers) => {
   const appChoice = answers['app-choice'];
   const appName = process.argv[2] ? process.argv[2] : defaultAppName;
-  const appDir = `${currDir}/${appName}`;
+  const appPath = `${currDir}/${appName}`;
   const templatePath = `${__dirname}/../templates/${appChoice}`;
 
-  fs.mkdirSync(appDir);
-
+  console.log(chalk.cyan('Forging a new React application...'));
+  fs.mkdirSync(appPath);
   createDirectoryContents(templatePath, appName);
+  fs.renameSync(`${appPath}/gitignore`, `${appPath}/.gitignore`);
 
-  fs.renameSync(`${appDir}/gitignore`, `${appDir}/.gitignore`);
+  console.log(chalk.cyan('Running npm install...'));
+  try { execSync(`npm install -s error -C ${appPath}`); }
+  catch (error) { console.log(chalk.red('Error: '), error); }
+
+  console.log();
+  console.log(`${chalk.green('Success!')} Created ${appName} at ${appPath}`);
+  console.log('Inside that directory, you can run several commands:');
+  console.log();
+  console.log(chalk.cyan('  npm start'));
+  console.log('    Starts the development server.');
+  console.log();
+  console.log(chalk.cyan('  npm run build'));
+  console.log('    Bundles the app into static files for production.');
+  console.log();
+  console.log(chalk.cyan('  npm test'));
+  console.log('    Starts the test runner.');
+  console.log();
+  console.log('I suggest that you begin by typing:');
+  console.log();
+  console.log(chalk.cyan('  cd'), appName);
+  console.log(chalk.cyan('  npm start'));
+  console.log();
 });
 
 function createDirectoryContents(templatePath, newAppPath) {
