@@ -6,17 +6,11 @@
   display: flex;
   flex-direction: column;
 
-  width: 100vw;
-  height: 100vh;
-
-  background-color: map-get($primary, ink);
-
   justify-content: center;
   align-items: center;
 
   @include element(cover) {
-    max-width: 20vw;
-    max-height: 20vh;
+    max-width: 200px;
     padding: map-get($sizes, padding-large);
   }
 
@@ -24,7 +18,7 @@
     text-decoration: none;
 
     >:hover {
-      color: map-get($primary, white);
+      color: map-get($primary, black);
     }
   }
 }
