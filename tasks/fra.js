@@ -3,7 +3,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const chalk = require('chalk');
-const execSync = require('child_process').execSync;
+const spawnSync = require('cross-spawn').sync;
 
 const defaultAppName = 'forge-react-app';
 const currDir = process.cwd();
@@ -25,13 +25,20 @@ inquirer.prompt(questions).then((answers) => {
   const templatePath = `${__dirname}/../templates/${appChoice}`;
 
   console.log(chalk.cyan('Forging a new React application...'));
+  console.log();
   fs.mkdirSync(appPath);
   createDirectoryContents(templatePath, appName);
-  fs.renameSync(`${appPath}/gitignore`, `${appPath}/.gitignore`);
+  fs.renameSync(`${appPath}/.npmignore`, `${appPath}/.gitignore`);
 
   console.log(chalk.cyan('Running npm install...'));
-  try { execSync(`npm install -s error -C ${appPath}`); }
-  catch (error) { console.log(chalk.red('Error: '), error); }
+  console.log();
+  try {
+    spawnSync('npm', ['install', '--loglevel', 'error', '--prefix', appPath], {
+      stdio: 'inherit',
+    });
+  } catch (error) {
+    console.log(chalk.red('Error: '), error);
+  }
 
   console.log();
   console.log(`${chalk.green('Success!')} Created ${appName} at ${appPath}`);
