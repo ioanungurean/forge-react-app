@@ -1,5 +1,5 @@
 # Forge React App
-Lightweight React boilerplate using Webpack 4 with a highly scalable architecture and a [production build 3 times smaller](#app's-size-in-production) than [Create React App](https://github.com/facebook/create-react-app)
+Lightweight React boilerplate using Webpack 4 with a highly scalable architecture and a [production build 3 times smaller](#app's-size-in-production-(gzip)) than [Create React App](https://github.com/facebook/create-react-app)
 
 Create React apps with no initial build configuration.
 * [Creating an App](#creating-an-app) – How to create a new app.
