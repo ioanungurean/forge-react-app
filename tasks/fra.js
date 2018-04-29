@@ -28,7 +28,7 @@ inquirer.prompt(questions).then((answers) => {
   console.log();
   fs.mkdirSync(appPath);
   createDirectoryContents(templatePath, appName);
-  fs.renameSync(`${appPath}/.npmignore`, `${appPath}/.gitignore`);
+  fs.renameSync(`${appPath}/.ignorefile`, `${appPath}/.gitignore`);
 
   console.log(chalk.cyan('Running npm install...'));
   console.log();
