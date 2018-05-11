@@ -10,8 +10,14 @@
   align-items: center;
 
   @include element(cover) {
-    max-width: 200px;
+    width: 20vw;
+    height: 20vh;
     padding: map-get($sizes, padding-large);
+
+    background-image: url('~gui/assets/images/cover.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 
   @include element(link) {
