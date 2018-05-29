@@ -53,7 +53,7 @@ Inside that directory, it will generate the initial project structure and instal
     ├── gui
     │   ├── assets
     │   │   └── images
-    │   │       └── cover.svg
+    │   │       └── cover.png
     │   ├── layout
     │   └── themes
     │       └── default
