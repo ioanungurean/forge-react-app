@@ -1,6 +1,6 @@
-@import 'xbem';
-@import 'layout';
-@import 'patterns';
+@import 'xbem.scss';
+@import 'layout.scss';
+@import 'patterns.scss';
 
 @include block(app) {
   display: flex;
