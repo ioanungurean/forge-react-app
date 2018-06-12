@@ -29,7 +29,6 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "cross-spawn": "^6.0.5",
-    "inquirer": "^6.0.0"
+    "cross-spawn": "^6.0.5"
   }
 }
