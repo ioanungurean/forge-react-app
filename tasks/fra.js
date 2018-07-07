@@ -33,7 +33,7 @@ function buildStructure(templatePath, newAppPath) {
 function main() {
   const appName = process.argv[2] ? process.argv[2] : defaultAppName;
   const appPath = `${currDir}/${appName}`;
-  const templatePath = `${__dirname}/../template`;
+  const templatePath = `${__dirname}/../forge-react-app`;
 
   console.log(chalk.cyan('Forging a new React application...'));
   console.log();
