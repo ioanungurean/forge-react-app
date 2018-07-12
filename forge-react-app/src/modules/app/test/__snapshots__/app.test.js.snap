@@ -4,13 +4,16 @@ exports[`<App /> should render without throwing an error 1`] = `
 <div
   className="app"
 >
-  <img
-    alt="React App - Starter"
+  <div
     className="app__cover"
-    src="test-file-stub"
   />
-  <Title
-    title="React App - Starter"
-  />
+  <a
+    className="app__link"
+    href="https://github.com/ioanungurean/forge-react-app"
+  >
+    <Title
+      title="Forge React App"
+    />
+  </a>
 </div>
 `;
