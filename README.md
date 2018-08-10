@@ -1,5 +1,5 @@
 # Forge React App
-Lightweight React boilerplate using Webpack 4 with a highly scalable architecture and a [production build 3 times smaller](#app's-size-in-production-(gzip)) than [Create React App](https://github.com/facebook/create-react-app)
+Lightweight React boilerplate using Webpack 4 with a highly scalable architecture and a [production build 3 times smaller](#app's-size-in-production-\(gzip\)) than [Create React App](https://github.com/facebook/create-react-app)
 
 Create React apps with no initial build configuration.
 * [Creating an App](#creating-an-app) – How to create a new app.
@@ -16,7 +16,7 @@ npm start
 
 *([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher, see [instructions for older npm versions](#instructions-for-older-npm-versions))*
 
-Then open [http://localhost:9000/](http://localhost:9000/) to see your app.<br>
+Then open [http://localhost:9000](http://localhost:9000) to see your app.<br>
 When you’re ready to deploy to production, create a minified bundle with `npm run build`.
 
 ## Creating an app
@@ -36,27 +36,44 @@ Inside that directory, it will generate the initial project structure and instal
 ```sh
 .
 ├── devtools
-│   ├── test
-│   ├── webpack
-│   └── webpack.config.js
+│   ├── test
+│   │   ├── jest.config.js
+│   │   ├── mocks
+│   │   │   └── file-mock.js
+│   │   └── temp-polyfill.js
+│   ├── webpack
+│   │   ├── development.js
+│   │   ├── plugins.js
+│   │   └── production.js
+│   └── webpack.config.js
 ├── package.json
 ├── package-lock.json
 └── src
     ├── components
-    │   └── title
-    │       ├── test
-    │       │   ├── __snapshots__
-    │       │   └── title.test.js
-    │       ├── title.component.js
-    │       └── title.style.scss
+    │   └── title
+    │       ├── test
+    │       │   ├── __snapshots__
+    │       │   │   └── title.test.js.snap
+    │       │   └── title.test.js
+    │       ├── title.component.js
+    │       └── title.style.scss
     ├── favicon.ico
     ├── gui
-    │   ├── assets
-    │   │   └── images
-    │   │       └── cover.png
-    │   ├── layout
-    │   └── themes
-    │       └── default
+    │   ├── assets
+    │   │   └── images
+    │   │       └── cover.png
+    │   ├── layout
+    │   │   ├── layout.scss
+    │   │   └── _normalize.scss
+    │   └── themes
+    │       └── default
+    │           ├── fonts
+    │           │   ├── fonts.scss
+    │           │   └── icons
+    │           └── patterns
+    │               ├── _colors.scss
+    │               ├── patterns.scss
+    │               └── _sizes.scss
     ├── index.js
     ├── libs
     └── modules
@@ -66,6 +83,7 @@ Inside that directory, it will generate the initial project structure and instal
             └── test
                 ├── app.test.js
                 └── __snapshots__
+                    └── app.test.js.snap
 ```
 
 Once the installation is done, you can open your project folder:
@@ -80,7 +98,7 @@ Inside the newly created project, you can run some built-in commands:
 Runs the app in development mode.<br>
 Open [http://localhost:9000](http://localhost:9000) to view it in the browser.
 
-The page will automatically modify without reloading when you make changes to the code. (React Hot Loader) <br>
+The page will automatically modify without reloading when you make changes to the code. ([React Hot Loader](https://github.com/gaearon/react-hot-loader)) <br>
 You will see the build errors and lint warnings in the console.
 
 #### `npm run test` or `yarn test`
@@ -101,7 +119,7 @@ This script will help you:
 * Find out what modules make up the most of it's size
 * Find modules that got there by mistake
 * Optimize it!
-* And the best thing is it supports minified bundles! It parses them to get real size of bundled modules. And it also shows their gzipped sizes!
+* And the best thing is it supports minified bundles. It parses them to get real size of bundled modules. And it also shows their gzipped sizes.
 
 ## Instructions for older `npm` versions
 If you use npm 5.1 or earlier, you can't use `npx`.
@@ -138,11 +156,11 @@ forge-react-app my-app
 
 ## App's size in production (gzip)
 * All (36 KB)
-* vendor.ae9379741f871b6ba2be.js (34.11 KB)
-* index.1f1cbf641d603d86f8ee.js (1.89 KB)
+    * vendor.ae9379741f871b6ba2be.js (34.11 KB)
+    * index.1f1cbf641d603d86f8ee.js (1.89 KB)
 
 ## Feedback and suggestions
-If you want to leave some suggestions or give me constructive feedback please don't hesitate to open an issue I will gladdly look into into it.
+If you want to leave some suggestions or give me constructive feedback please don't hesitate to open an issue. I will gladdly look into into it.
 
 Thank you for your time! :wink:
 
