@@ -3,4 +3,4 @@ public/
 coverage/
 
 jsconfig.json
-bundle-analysis-stats.json
+bundle-analysis.json

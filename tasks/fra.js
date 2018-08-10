@@ -30,7 +30,7 @@ function buildStructure(templatePath, newAppPath) {
   });
 }
 
-function main() {
+(function() {
   const appName = process.argv[2] ? process.argv[2] : defaultAppName;
   const appPath = `${currDir}/${appName}`;
   const templatePath = `${__dirname}/../forge-react-app`;
@@ -69,6 +69,4 @@ function main() {
   console.log(chalk.cyan('  cd'), appName);
   console.log(chalk.cyan('  npm start'));
   console.log();
-}
-
-main();
+})();

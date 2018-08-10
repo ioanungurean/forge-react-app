@@ -1,8 +1,0 @@
-@import 'xbem.scss';
-@import 'patterns.scss';
-
-@include block(title) {
-  font-weight: 400;
-  text-align: center;
-  color: map-get($primary, react);
-}

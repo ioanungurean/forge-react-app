@@ -38,9 +38,8 @@ Inside that directory, it will generate the initial project structure and instal
 ├── devtools
 │   ├── test
 │   │   ├── jest.config.js
-│   │   ├── mocks
-│   │   │   └── file-mock.js
-│   │   └── temp-polyfill.js
+│   │   └── mocks
+│   │       └── file.mock.js
 │   ├── webpack
 │   │   ├── development.js
 │   │   ├── plugins.js
@@ -50,15 +49,24 @@ Inside that directory, it will generate the initial project structure and instal
 ├── package-lock.json
 └── src
     ├── components
-    │   └── title
+    │   └── Title
     │       ├── test
     │       │   ├── __snapshots__
-    │       │   │   └── title.test.js.snap
-    │       │   └── title.test.js
-    │       ├── title.component.js
-    │       └── title.style.scss
+    │       │   │   └── Title.test.js.snap
+    │       │   └── Title.test.js
+    │       ├── Title.js
+    │       └── Title.scss
     ├── favicon.ico
-    ├── gui
+    ├── index.js
+    ├── modules
+    │   └── App
+    │       ├── App.js
+    │       ├── App.scss
+    │       └── test
+    │           ├── App.test.js
+    │           └── __snapshots__
+    │               └── App.test.js.snap
+    ├── ui
     │   ├── assets
     │   │   └── images
     │   │       └── cover.png
@@ -74,16 +82,8 @@ Inside that directory, it will generate the initial project structure and instal
     │               ├── _colors.scss
     │               ├── patterns.scss
     │               └── _sizes.scss
-    ├── index.js
-    ├── libs
-    └── modules
-        └── app
-            ├── app.module.js
-            ├── app.style.scss
-            └── test
-                ├── app.test.js
-                └── __snapshots__
-                    └── app.test.js.snap
+    └── utils
+        └── index.js
 ```
 
 Once the installation is done, you can open your project folder:
@@ -113,7 +113,7 @@ The build is minified and the filenames include the hashes.<br>
 
 Your app is ready to be deployed.
 
-#### `npm run analysis` or `yarn analysis` (Webpack Bundle Analyzer)
+#### `npm run analyze` or `yarn analyze` (Webpack Bundle Analyzer)
 This script will help you:
 * Realize what's really inside your bundle
 * Find out what modules make up the most of it's size
@@ -139,13 +139,14 @@ forge-react-app my-app
 | Package       |Version |
 | ------------- |--------|
 | React         |^16.x.x |
+| React Router  |^4.x.x  |
 | [xBEM][1]     |^0.x.x  |
 | Jest          |^23.x.x |
 | Enzyme        |^3.x.x  |
 | Babel         |^6.x.x  |
 | Webpack       |^4.x.x  |
 
-[1]: https://github.com/bogdan-prisecaru/xbem
+[1]: https://www.npmjs.com/package/xbem
 
 ## Features
 * Scope Hoisting
@@ -160,7 +161,7 @@ forge-react-app my-app
     * index.1f1cbf641d603d86f8ee.js (1.89 KB)
 
 ## Feedback and suggestions
-If you want to leave some suggestions or give me constructive feedback please don't hesitate to open an issue. I will gladdly look into into it.
+If you want to leave some suggestions or give me constructive feedback please don't hesitate to [file an issue](https://github.com/ioanungurean/forge-react-app/issues/new). I will gladdly look into into it.
 
 Thank you for your time! :wink:
 

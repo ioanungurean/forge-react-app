@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import './title.style.scss';
+import './Title.scss';
 
 class Title extends Component {
   render() {
     return (
-      <h1 className="title">
+      <span className="title">
         {this.props.title}
-      </h1>
+      </span>
     );
-  }
+  };
 };
 
 Title.displayName = 'Title';

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> should render without throwing an error 1`] = `
+<div
+  className="home"
+>
+  Home
+</div>
+`;

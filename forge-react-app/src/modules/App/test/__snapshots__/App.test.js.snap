@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should render without throwing an error 1`] = `
+<BrowserRouter>
+  <div
+    className="app"
+  >
+    <div
+      className="app__header"
+    >
+      <div
+        className="app__icon--react"
+      />
+      <Link
+        replace={false}
+        to="/"
+      >
+        Home
+      </Link>
+      <Link
+        replace={false}
+        to="/about"
+      >
+        About
+      </Link>
+      <a
+        href="https://github.com/ioanungurean/forge-react-app"
+      >
+        <Title
+          title="Forge React App on Github"
+        />
+      </a>
+    </div>
+    <div
+      className="app__content"
+    >
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/"
+      />
+      <Route
+        component={[Function]}
+        path="/about"
+      />
+    </div>
+  </div>
+</BrowserRouter>
+`;

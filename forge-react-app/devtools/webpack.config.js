@@ -13,7 +13,9 @@ module.exports = (params) => {
   console.info('*** Analysis', config.analysis);
   console.info('*** Theme', config.theme);
 
-  return merge({
+  return merge.smartStrategy({
+      'module.rules.use': 'prepend',
+    })({
     context: path.resolve('src'),
 
     mode: config.environment,
@@ -24,6 +26,30 @@ module.exports = (params) => {
           test: /\.js$/,
           exclude: /node_modules/,
           use: 'babel-loader',
+        },
+        {
+          test: /\.(css|scss)$/,
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                sourceMap: true,
+              },
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true,
+                includePaths: [
+                  path.resolve('node_modules/xbem/src'),
+                  path.resolve(`src/ui/layout`),
+                  path.resolve(`src/ui/themes/${config.theme}`),
+                  path.resolve(`src/ui/themes/${config.theme}/fonts`),
+                  path.resolve(`src/ui/themes/${config.theme}/patterns`),
+                ],
+              },
+            },
+          ],
         },
         {
           test: /\.(jpe?g|png|svg|gif|ico|ttf|woff|woff2|eot)$/,
@@ -46,7 +72,7 @@ module.exports = (params) => {
       alias: {
         components: path.resolve('src/components'),
         modules: path.resolve('src/modules'),
-        libs: path.resolve('src/libs'),
+        utils: path.resolve('src/utils'),
       },
     },
 
