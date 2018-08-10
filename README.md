@@ -1,5 +1,5 @@
 # Forge React App
-Lightweight React boilerplate using Webpack 4 with a highly scalable architecture and a [production build 3 times smaller](#app's-size-in-production-\(gzip\)) than [Create React App](https://github.com/facebook/create-react-app)
+Lightweight React boilerplate using Webpack 4 with a highly scalable architecture and a [production build 3 times smaller](#production-build-size) than [Create React App](https://github.com/facebook/create-react-app)
 
 Create React apps with no initial build configuration.
 * [Creating an App](#creating-an-app) – How to create a new app.
@@ -39,48 +39,37 @@ Inside that directory, it will generate the initial project structure and instal
 │   ├── test
 │   │   ├── jest.config.js
 │   │   └── mocks
-│   │       └── file.mock.js
 │   ├── webpack
 │   │   ├── development.js
 │   │   ├── plugins.js
 │   │   └── production.js
 │   └── webpack.config.js
-├── package.json
-├── package-lock.json
 └── src
+    ├── index.js
     ├── components
     │   └── Title
     │       ├── test
-    │       │   ├── __snapshots__
-    │       │   │   └── Title.test.js.snap
     │       │   └── Title.test.js
     │       ├── Title.js
     │       └── Title.scss
-    ├── favicon.ico
-    ├── index.js
     ├── modules
     │   └── App
     │       ├── App.js
     │       ├── App.scss
     │       └── test
-    │           ├── App.test.js
-    │           └── __snapshots__
-    │               └── App.test.js.snap
+    │           └── App.test.js
     ├── ui
     │   ├── assets
     │   │   └── images
-    │   │       └── cover.png
     │   ├── layout
     │   │   ├── layout.scss
-    │   │   └── _normalize.scss
     │   └── themes
     │       └── default
     │           ├── fonts
     │           │   ├── fonts.scss
-    │           │   └── icons
     │           └── patterns
-    │               ├── _colors.scss
     │               ├── patterns.scss
+    │               ├── _colors.scss
     │               └── _sizes.scss
     └── utils
         └── index.js
@@ -155,8 +144,8 @@ forge-react-app my-app
 * Deterministic Hashes
 * [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
 
-## App's size in production (gzip)
-* All (36 KB)
+## Production build size
+* All (36 KB) (gzip)
     * vendor.ae9379741f871b6ba2be.js (34.11 KB)
     * index.1f1cbf641d603d86f8ee.js (1.89 KB)
 
