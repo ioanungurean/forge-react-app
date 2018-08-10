@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { shallow } from 'enzyme';
 
-import App from '../app.module';
+import App from '../App';
 
 describe('<App />', () => {
   test('should render without throwing an error', () => {

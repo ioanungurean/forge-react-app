@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
-import Title from '../title.component';
+import React from 'react';
+import { shallow } from 'enzyme';
+
+import Title from '../Title';
 
 describe('<Title />', () => {
   test('should render without throwing an error', () => {

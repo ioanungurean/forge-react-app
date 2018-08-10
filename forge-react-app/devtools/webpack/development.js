@@ -6,7 +6,7 @@ module.exports = (config) => {
     entry: {
       index: [
         'react-hot-loader/patch',
-        path.resolve('src/index.js')
+        path.resolve('src/index.js'),
       ],
       vendor: ['react', 'react-dom'],
     },
@@ -17,25 +17,6 @@ module.exports = (config) => {
           test: /\.(css|scss)$/,
           use: [
             { loader: 'style-loader' },
-            {
-              loader: 'css-loader',
-              options: {
-                sourceMap: true,
-              },
-            },
-            {
-              loader: 'sass-loader',
-              options: {
-                sourceMap: true,
-                includePaths: [
-                  path.resolve('node_modules/xbem/src'),
-                  path.resolve(`src/gui/layout`),
-                  path.resolve(`src/gui/themes/${config.theme}`),
-                  path.resolve(`src/gui/themes/${config.theme}/fonts`),
-                  path.resolve(`src/gui/themes/${config.theme}/patterns`),
-                ],
-              },
-            },
           ],
         },
       ],
