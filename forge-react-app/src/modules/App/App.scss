@@ -1,26 +1,10 @@
-@import 'xbem.scss';
-@import 'layout.scss';
-@import 'patterns.scss';
+@import 'theme.scss';
 
-@include block(app) {
+.app {
   display: flex;
   flex-direction: column;
 
-  @include element(icon) {
-    width: 3rem;
-    height: 3rem;
-    padding: map-get($sizes, padding-large);
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    @include modifier(react) {
-      background-image: url('~ui/assets/images/react.svg');
-    }
-  }
-
-  @include element(header) {
+  .header {
     display: flex;
     align-items: center;
 
@@ -31,8 +15,19 @@
     border: 1px solid map-get($primary, react);
   }
 
-  @include element(content) {
+  .content {
     display: flex;
     padding: map-get($sizes, padding-large);
+  }
+
+  .icon-react {
+    width: 3rem;
+    height: 3rem;
+    padding: map-get($sizes, padding-large);
+
+    background-image: url('~ui/assets/images/react.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 }
