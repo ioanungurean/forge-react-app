@@ -5,7 +5,7 @@ module.exports = (config) => {
   return {
     entry: {
       index: path.resolve('src/index.js'),
-      vendor: ['react', 'react-dom'],
+      vendor: ['react', 'react-dom', 'prop-types', 'react-router-dom', 'xbem'],
     },
 
     module: {

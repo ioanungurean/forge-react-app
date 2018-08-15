@@ -11,7 +11,7 @@
     "build": "webpack --config devtools/webpack.config --env.environment=production",
     "test": "jest",
     "test:upd": "jest --updateSnapshot",
-    "test:cov": "jest --coverage",
+    "test:cov": "jest --coverage --no-cache",
     "preanalyze": "rimraf public | rimraf bundle-analysis.json",
     "analyze": "webpack --config devtools/webpack.config --profile --json > bundle-analysis.json --env.environment=production --env.analysis=true"
   },
@@ -20,7 +20,7 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-router-dom": "^4.3.1",
-    "xbem": "^0.0.8"
+    "xbem": "^0.0.9"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -46,7 +46,7 @@
     "rimraf": "^2.6.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
-    "uglifyjs-webpack-plugin": "^1.2.7",
+    "uglifyjs-webpack-plugin": "^1.3.0",
     "webpack": "^4.16.5",
     "webpack-bundle-analyzer": "^2.13.1",
     "webpack-chunk-hash": "^0.6.0",
@@ -55,27 +55,23 @@
     "webpack-merge": "^4.1.4"
   },
   "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "jsx"
+    "roots": [
+      "src/"
     ],
     "moduleDirectories": [
       "node_modules",
       "src"
     ],
-    "setupFiles": [
-      "./devtools/test/jest.config.js"
-    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/mocks/file.mock.js",
+      "^.+\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/devtools/test/enzyme.config.js",
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
-    },
-    "testURL": "http://localhost/",
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/devtools/test/mocks/file.mock.js",
-      "^.+\\.(css|scss)$": "identity-obj-proxy"
     }
   }
 }
