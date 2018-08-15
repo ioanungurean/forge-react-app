@@ -18,8 +18,8 @@ class App extends Component {
     return (
       <Router>
         <div className="app">
-          <div className="app__header">
-            <div className="app__icon--react" />
+          <div className="header">
+            <div className="icon-react" />
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
 
@@ -28,7 +28,7 @@ class App extends Component {
             </a>
           </div>
 
-          <div className="app__content">
+          <div className="content">
             <Route exact path="/" component={Home}/>
             <Route path="/about" component={About}/>
           </div>

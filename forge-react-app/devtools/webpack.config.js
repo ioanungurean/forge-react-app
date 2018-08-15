@@ -5,13 +5,11 @@ const plugins = require('./webpack/plugins');
 module.exports = (params) => {
   const config = {
     environment: (params && params.environment) ? params.environment : 'development',
-    theme: (params && params.theme) ? params.theme : 'default',
     analysis: (params && params.analysis) ? params.analysis : false,
   };
 
   console.info('*** Environment', config.environment);
   console.info('*** Analysis', config.analysis);
-  console.info('*** Theme', config.theme);
 
   return merge.smartStrategy({
       'module.rules.use': 'prepend',
@@ -41,11 +39,7 @@ module.exports = (params) => {
               options: {
                 sourceMap: true,
                 includePaths: [
-                  path.resolve('node_modules/xbem/src'),
-                  path.resolve(`src/ui/layout`),
-                  path.resolve(`src/ui/themes/${config.theme}`),
-                  path.resolve(`src/ui/themes/${config.theme}/fonts`),
-                  path.resolve(`src/ui/themes/${config.theme}/patterns`),
+                  path.resolve(`src/ui/theme`),
                 ],
               },
             },

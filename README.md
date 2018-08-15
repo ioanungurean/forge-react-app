@@ -36,43 +36,50 @@ Inside that directory, it will generate the initial project structure and instal
 ```sh
 .
 ├── devtools
-│   ├── test
-│   │   ├── jest.config.js
-│   │   └── mocks
-│   ├── webpack
-│   │   ├── development.js
-│   │   ├── plugins.js
-│   │   └── production.js
-│   └── webpack.config.js
+│   ├── test
+│   │   ├── enzyme.config.js
+│   │   └── mocks
+│   ├── webpack
+│   │   ├── development.js
+│   │   ├── plugins.js
+│   │   └── production.js
+│   └── webpack.config.js
+├── package.json
+├── package-lock.json
 └── src
-    ├── index.js
     ├── components
-    │   └── Title
-    │       ├── test
-    │       │   └── Title.test.js
-    │       ├── Title.js
-    │       └── Title.scss
+    │   └── Title
+    │       ├── test
+    │       │   └── Title.test.js
+    │       ├── Title.js
+    │       └── Title.scss
+    ├── favicon.ico
+    ├── index.js
     ├── modules
-    │   └── App
-    │       ├── App.js
-    │       ├── App.scss
-    │       └── test
-    │           └── App.test.js
-    ├── ui
-    │   ├── assets
-    │   │   └── images
-    │   ├── layout
-    │   │   ├── layout.scss
-    │   └── themes
-    │       └── default
-    │           ├── fonts
-    │           │   ├── fonts.scss
-    │           └── patterns
-    │               ├── patterns.scss
-    │               ├── _colors.scss
-    │               └── _sizes.scss
-    └── utils
-        └── index.js
+    │   ├── About
+    │   │   ├── About.js
+    │   │   ├── About.scss
+    │   │   └── test
+    │   │       └── About.test.js
+    │   ├── App
+    │   │   ├── App.js
+    │   │   ├── App.scss
+    │   │   └── test
+    │   │       └── App.test.js
+    │   └── Home
+    │       ├── Home.js
+    │       ├── Home.scss
+    │           └── Home.test.js
+    └── ui
+        ├── assets
+        │   └── images
+        └── theme
+            ├── _colors.scss
+            ├── _normalize.scss
+            ├── _sizes.scss
+            └── theme.scss
+
+23 directories, 31 files
 ```
 
 Once the installation is done, you can open your project folder:
@@ -129,13 +136,10 @@ forge-react-app my-app
 | ------------- |--------|
 | React         |^16.x.x |
 | React Router  |^4.x.x  |
-| [xBEM][1]     |^0.x.x  |
 | Jest          |^23.x.x |
 | Enzyme        |^3.x.x  |
 | Babel         |^6.x.x  |
 | Webpack       |^4.x.x  |
-
-[1]: https://www.npmjs.com/package/xbem
 
 ## Features
 * Scope Hoisting
@@ -153,6 +157,3 @@ forge-react-app my-app
 If you want to leave some suggestions or give me constructive feedback please don't hesitate to [file an issue](https://github.com/ioanungurean/forge-react-app/issues/new). I will gladdly look into into it.
 
 Thank you for your time! :wink:
-
-## Thank you
-* [Bogdan Prisecaru (@bogdan-prisecaru)](https://github.com/bogdan-prisecaru) ⋅ Sass project structure
