@@ -149,9 +149,9 @@ forge-react-app my-app
 * [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
 
 ## Production build size
-* All (36 KB) (gzip)
-    * vendor.ae9379741f871b6ba2be.js (34.11 KB)
-    * index.1f1cbf641d603d86f8ee.js (1.89 KB)
+* All (43.95 KB) (gzip)
+    * vendor.ae9379741f871b6ba2be.js (41.73 KB)
+    * index.1f1cbf641d603d86f8ee.js (2.22 KB)
 
 ## Feedback and suggestions
 If you want to leave some suggestions or give me constructive feedback please don't hesitate to [file an issue](https://github.com/ioanungurean/forge-react-app/issues/new). I will gladdly look into into it.

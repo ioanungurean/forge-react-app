@@ -20,7 +20,7 @@
     "webpack4",
     "jest",
     "enzyme",
-    "bolierplate"
+    "boilerplate"
   ],
   "bin": {
     "forge-react-app": "./tasks/fra.js"
