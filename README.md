@@ -68,7 +68,7 @@ Inside that directory, it will generate the initial project structure and instal
     │   │       └── App.test.js
     │   └── Home
     │       ├── Home.js
-    │       ├── Home.scss
+    │       └── Home.scss
     │           └── Home.test.js
     └── ui
         ├── assets
