@@ -6,10 +6,10 @@ exports[`<App /> should render without throwing an error 1`] = `
     className="app"
   >
     <div
-      className="app__header"
+      className="header"
     >
       <div
-        className="app__icon--react"
+        className="icon-react"
       />
       <Link
         replace={false}
@@ -32,7 +32,7 @@ exports[`<App /> should render without throwing an error 1`] = `
       </a>
     </div>
     <div
-      className="app__content"
+      className="content"
     >
       <Route
         component={[Function]}
