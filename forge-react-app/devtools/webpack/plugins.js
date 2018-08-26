@@ -37,7 +37,7 @@ module.exports = {
     MiniCssExtractPlugin.loader,
 
   OptimizeCSSAssetsPlugin:
-    new OptimizeCSSAssetsPlugin({}),
+    new OptimizeCSSAssetsPlugin(),
 
   UglifyJsPlugin:
     new UglifyJsPlugin({

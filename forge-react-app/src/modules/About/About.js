@@ -12,5 +12,4 @@ class About extends Component {
   }
 }
 
-About.displayName = 'About';
 export default About;

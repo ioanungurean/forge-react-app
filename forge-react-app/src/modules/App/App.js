@@ -38,5 +38,4 @@ class App extends Component {
   }
 }
 
-App.displayName = 'App';
 export default hot(module)(App);

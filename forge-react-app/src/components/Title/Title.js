@@ -13,7 +13,6 @@ class Title extends Component {
   };
 };
 
-Title.displayName = 'Title';
 Title.propTypes = {
   title: PropTypes.string.isRequired,
 };
