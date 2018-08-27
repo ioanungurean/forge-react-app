@@ -4,19 +4,19 @@ const plugins = require('./webpack/plugins');
 
 module.exports = (params) => {
   const config = {
-    environment: (params && params.environment) ? params.environment : 'development',
-    analysis: (params && params.analysis) ? params.analysis : false,
+    mode: (params && params.mode) ? params.mode : 'development',
+    eval: (params && params.eval) ? params.eval : false,
   };
 
-  console.info('*** Environment', config.environment);
-  console.info('*** Analysis', config.analysis);
+  console.info('*** Environment: ', config.mode);
+  console.info('*** Evaluate: ', config.eval);
 
   return merge.smartStrategy({
       'module.rules.use': 'prepend',
     })({
     context: path.resolve('src'),
 
-    mode: config.environment,
+    mode: config.mode,
 
     module: {
       rules: [
@@ -80,5 +80,5 @@ module.exports = (params) => {
           chunks: 'all',
       },
     },
-  }, require('./webpack/' + config.environment)(config));
+  }, require('./webpack/' + config.mode)(config));
 };
