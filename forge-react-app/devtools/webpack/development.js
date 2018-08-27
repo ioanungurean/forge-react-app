@@ -35,13 +35,14 @@ module.exports = (config) => {
       historyApiFallback: true,
       port: 9000,
       hot: true,
-      stats: 'minimal',
+      quiet: true,
       open: true,
     },
 
     plugins: [
       plugins.HotModuleReplacementPlugin,
       plugins.ErrorOverlayPlugin,
+      plugins.FriendlyErrorsWebpackPlugin,
     ],
 
     optimization: {

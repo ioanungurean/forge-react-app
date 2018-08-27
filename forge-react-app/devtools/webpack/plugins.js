@@ -8,6 +8,7 @@ const HtmlWebpackTemplate = require('html-webpack-template');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
@@ -51,6 +52,12 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
 
   ErrorOverlayPlugin: new ErrorOverlayPlugin(),
+
+  FriendlyErrorsWebpackPlugin: new FriendlyErrorsWebpackPlugin({
+    compilationSuccessInfo: {
+      messages: ['You application is running at: http://localhost:9000'],
+    },
+  }),
 
   BundleAnalyzerPlugin:
     new BundleAnalyzerPlugin(),
