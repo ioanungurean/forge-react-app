@@ -25,7 +25,7 @@ module.exports = (config) => {
     },
 
     plugins: [
-      ...(config.analysis ? [ plugins.BundleAnalyzerPlugin ] : []),
+      ...(config.eval ? [ plugins.BundleAnalyzerPlugin ] : []),
       plugins.HashedModuleIdsPlugin,
       plugins.WebpackChunkHash,
       plugins.MiniCssExtractPlugin,

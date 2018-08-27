@@ -28,17 +28,20 @@ module.exports = (config) => {
       filename: '[name].[hash].js',
     },
 
-    devtool: 'eval-source-map',
+    devtool: 'cheap-module-source-map',
 
     devServer: {
       contentBase: path.resolve('public'),
       historyApiFallback: true,
-      hot: true,
       port: 9000,
+      hot: true,
+      stats: 'minimal',
+      open: true,
     },
 
     plugins: [
       plugins.HotModuleReplacementPlugin,
+      plugins.ErrorOverlayPlugin,
     ],
 
     optimization: {

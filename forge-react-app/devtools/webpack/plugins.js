@@ -7,6 +7,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const HtmlWebpackTemplate = require('html-webpack-template');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
@@ -48,6 +49,8 @@ module.exports = {
 
   HotModuleReplacementPlugin:
     new webpack.HotModuleReplacementPlugin(),
+
+  ErrorOverlayPlugin: new ErrorOverlayPlugin(),
 
   BundleAnalyzerPlugin:
     new BundleAnalyzerPlugin(),
