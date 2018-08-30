@@ -134,12 +134,12 @@ forge-react-app my-app
 ## Main dependencies
 | Package       |Version |
 | ------------- |--------|
-| React         |^16.x.x |
-| React Router  |^4.x.x  |
-| Jest          |^23.x.x |
-| Enzyme        |^3.x.x  |
-| Babel         |^6.x.x  |
-| Webpack       |^4.x.x  |
+| React         |^16.x |
+| React Router  |^4.x  |
+| Jest          |^23.x |
+| Enzyme        |^3.x  |
+| Babel         |^7.x  |
+| Webpack       |^4.x  |
 
 ## Features
 * Scope Hoisting
