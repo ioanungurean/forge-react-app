@@ -4,7 +4,6 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import { hot } from 'react-hot-loader';
 
 import Title from 'components/Title/Title';
 
@@ -38,4 +37,4 @@ class App extends Component {
   }
 }
 
-export default hot(module)(App);
+export default App;

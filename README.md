@@ -94,7 +94,7 @@ Inside the newly created project, you can run some built-in commands:
 Runs the app in development mode.<br>
 Open [http://localhost:9000](http://localhost:9000) to view it in the browser.
 
-The page will automatically modify without reloading when you make changes to the code. ([React Hot Loader](https://github.com/gaearon/react-hot-loader)) <br>
+The page will automatically modify when you make changes to the code. <br>
 You will see the build errors and lint warnings in the console.
 
 #### `npm run test` or `yarn test`
@@ -144,7 +144,6 @@ forge-react-app my-app
 ## Features
 * Scope Hoisting
 * Uglification of base app via `webpack --mode production`
-* [React Hot Loader](https://github.com/gaearon/react-hot-loader)
 * Deterministic Hashes
 * [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
 
