@@ -16,7 +16,6 @@
   "keywords": [
     "react",
     "react-router",
-    "react-hot-loader",
     "webpack4",
     "jest",
     "enzyme",
