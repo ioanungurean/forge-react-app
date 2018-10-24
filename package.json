@@ -15,8 +15,7 @@
   "license": "MIT",
   "keywords": [
     "react",
-    "react-router",
-    "webpack4",
+    "webpack",
     "jest",
     "enzyme",
     "starter",

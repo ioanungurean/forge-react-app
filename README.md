@@ -73,11 +73,11 @@ Inside that directory, it will generate the initial project structure and instal
     └── ui
         ├── assets
         │   └── images
-        └── theme
+        └── shared
             ├── _colors.scss
             ├── _normalize.scss
             ├── _sizes.scss
-            └── theme.scss
+            └── shared.scss
 
 23 directories, 31 files
 ```

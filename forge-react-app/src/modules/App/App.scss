@@ -1,4 +1,4 @@
-@import 'theme.scss';
+@import 'shared.scss';
 
 .app {
   display: flex;
@@ -13,11 +13,6 @@
     }
 
     border: 1px solid map-get($primary, react);
-  }
-
-  .content {
-    display: flex;
-    padding: map-get($sizes, padding-large);
   }
 
   .icon-react {

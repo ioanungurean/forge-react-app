@@ -39,7 +39,7 @@ module.exports = (params) => {
               options: {
                 sourceMap: true,
                 includePaths: [
-                  path.resolve(`src/ui/theme`),
+                  path.resolve(`src/ui/shared`),
                 ],
               },
             },
