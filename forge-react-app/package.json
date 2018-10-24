@@ -17,8 +17,8 @@
   },
   "dependencies": {
     "prop-types": "^15.6.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
@@ -43,16 +43,16 @@
     "node-sass": "^4.9.4",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "path": "^0.12.7",
-    "react-test-renderer": "^16.5.2",
+    "react-test-renderer": "^16.6.0",
     "rimraf": "^2.6.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.0.1",
-    "webpack": "^4.21.0",
+    "webpack": "^4.22.0",
     "webpack-bundle-analyzer": "^3.0.3",
     "webpack-chunk-hash": "^0.6.0",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9",
+    "webpack-dev-server": "^3.1.10",
     "webpack-merge": "^4.1.4"
   },
   "jest": {
