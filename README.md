@@ -56,30 +56,19 @@ Inside that directory, it will generate the initial project structure and instal
     ├── favicon.ico
     ├── index.js
     ├── modules
-    │   ├── About
-    │   │   ├── About.js
-    │   │   ├── About.scss
-    │   │   └── test
-    │   │       └── About.test.js
     │   ├── App
     │   │   ├── App.js
     │   │   ├── App.scss
     │   │   └── test
     │   │       └── App.test.js
-    │   └── Home
-    │       ├── Home.js
-    │       └── Home.scss
-    │           └── Home.test.js
     └── ui
         ├── assets
         │   └── images
         └── shared
-            ├── _colors.scss
-            ├── _normalize.scss
-            ├── _sizes.scss
+            ├── colors.scss
+            ├── normalize.scss
+            ├── sizes.scss
             └── shared.scss
-
-23 directories, 31 files
 ```
 
 Once the installation is done, you can open your project folder:
@@ -135,7 +124,6 @@ forge-react-app my-app
 | Package       |Version |
 | ------------- |--------|
 | React         |^16.x |
-| React Router  |^4.x  |
 | Jest          |^23.x |
 | Enzyme        |^3.x  |
 | Babel         |^7.x  |

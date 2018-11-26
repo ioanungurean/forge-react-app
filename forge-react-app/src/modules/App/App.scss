@@ -1,4 +1,6 @@
 @import 'shared.scss';
+@import 'sizes.scss';
+@import 'colors.scss';
 
 .app {
   display: flex;
@@ -12,7 +14,7 @@
       margin-right: 1rem;
     }
 
-    border: 1px solid map-get($primary, react);
+    border: 1px solid map-get($colors, react);
   }
 
   .icon-react {
