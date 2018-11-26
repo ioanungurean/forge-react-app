@@ -10,8 +10,6 @@ class App extends Component {
       <div className="app">
         <div className="header">
           <div className="icon-react" />
-          <a href="#">Home</a>
-
           <a href="https://github.com/ioanungurean/forge-react-app">
             <Title title="Forge React App on Github" />
           </a>
