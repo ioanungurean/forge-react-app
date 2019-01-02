@@ -11,11 +11,6 @@ exports[`<App /> should render without throwing an error 1`] = `
       className="icon-react"
     />
     <a
-      href="#"
-    >
-      Home
-    </a>
-    <a
       href="https://github.com/ioanungurean/forge-react-app"
     >
       <Title
