@@ -1,6 +1,6 @@
 {
   "name": "forge-react-app",
-  "version": "3.4.6",
+  "version": "3.4.7",
   "description": "Forge React App: React starter using Webpack 4",
   "main": "index.js",
   "homepage": "https://github.com/ioanungurean/forge-react-app",
