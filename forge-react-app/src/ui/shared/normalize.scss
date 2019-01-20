@@ -7,7 +7,13 @@ body {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
@@ -19,11 +25,13 @@ input {
   }
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
@@ -36,6 +44,7 @@ img {
   border: 0;
 }
 
-button, input[type='button'] {
+button,
+input[type="button"] {
   cursor: pointer;
 }

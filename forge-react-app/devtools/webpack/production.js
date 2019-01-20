@@ -1,51 +1,46 @@
-const path = require('path');
-const plugins = require('./plugins');
+const path = require("path");
+const plugins = require("./plugins");
 
-module.exports = (config) => {
+module.exports = config => {
   return {
     entry: {
-      index: path.resolve('src/index.js'),
-      vendor: ['react', 'react-dom', 'prop-types'],
+      index: path.resolve("src/index.js"),
+      vendor: ["react", "react-dom", "prop-types"]
     },
 
     module: {
       rules: [
         {
           test: /\.(css|scss)$/,
-          use: [
-            plugins.MiniCssExtractPluginLoader,
-          ],
-        },
-      ],
+          use: [plugins.MiniCssExtractPluginLoader]
+        }
+      ]
     },
 
     output: {
-      path: path.resolve(process.cwd(), 'public'),
-      filename: '[name].[chunkhash].js',
+      path: path.resolve(process.cwd(), "public"),
+      filename: "[name].[chunkhash].js"
     },
 
     plugins: [
-      ...(config.eval ? [ plugins.BundleAnalyzerPlugin ] : []),
+      ...(config.eval ? [plugins.BundleAnalyzerPlugin] : []),
       plugins.HashedModuleIdsPlugin,
       plugins.WebpackChunkHash,
-      plugins.MiniCssExtractPlugin,
+      plugins.MiniCssExtractPlugin
     ],
 
     optimization: {
       splitChunks: {
         cacheGroups: {
           styles: {
-            name: 'styles',
+            name: "styles",
             test: /\.css$/,
-            chunks: 'all',
-            enforce: true,
-          },
-        },
+            chunks: "all",
+            enforce: true
+          }
+        }
       },
-      minimizer: [
-        plugins.UglifyJsPlugin,
-        plugins.OptimizeCSSAssetsPlugin,
-      ],
-    },
+      minimizer: [plugins.UglifyJsPlugin, plugins.OptimizeCSSAssetsPlugin]
+    }
   };
 };

@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
-const chalk = require('chalk');
-const spawnSync = require('cross-spawn').sync;
+const fs = require("fs");
+const chalk = require("chalk");
+const spawnSync = require("cross-spawn").sync;
 
-const defaultAppName = 'forge-react-app';
+const defaultAppName = "forge-react-app";
 const currDir = process.cwd();
 
 function buildStructure(templatePath, newAppPath) {
   const filesToCreate = fs.readdirSync(templatePath);
 
-  filesToCreate.forEach((file) => {
+  filesToCreate.forEach(file => {
     const origFilePath = `${templatePath}/${file}`;
 
     // get stats about the current file
@@ -35,38 +35,38 @@ function buildStructure(templatePath, newAppPath) {
   const appPath = `${currDir}/${appName}`;
   const templatePath = `${__dirname}/../forge-react-app`;
 
-  console.log(chalk.cyan('Forging a new React application...'));
+  console.log(chalk.cyan("Forging a new React application..."));
   console.log();
   fs.mkdirSync(appPath);
   buildStructure(templatePath, appName);
   fs.renameSync(`${appPath}/.ignorefile`, `${appPath}/.gitignore`);
 
-  console.log(chalk.cyan('Running npm install...'));
+  console.log(chalk.cyan("Running npm install..."));
   console.log();
   try {
-    spawnSync('npm', ['install', '--loglevel', 'error', '--prefix', appPath], {
-      stdio: 'inherit',
+    spawnSync("npm", ["install", "--loglevel", "error", "--prefix", appPath], {
+      stdio: "inherit"
     });
   } catch (error) {
-    console.log(chalk.red('Error: '), error);
+    console.log(chalk.red("Error: "), error);
   }
 
   console.log();
-  console.log(`${chalk.green('Success!')} Created ${appName} at ${appPath}`);
-  console.log('Inside that directory, you can run several commands:');
+  console.log(`${chalk.green("Success!")} Created ${appName} at ${appPath}`);
+  console.log("Inside that directory, you can run several commands:");
   console.log();
-  console.log(chalk.cyan('  npm start'));
-  console.log('    Starts the development server.');
+  console.log(chalk.cyan("  npm start"));
+  console.log("    Starts the development server.");
   console.log();
-  console.log(chalk.cyan('  npm run build'));
-  console.log('    Bundles the app into static files for production.');
+  console.log(chalk.cyan("  npm run build"));
+  console.log("    Bundles the app into static files for production.");
   console.log();
-  console.log(chalk.cyan('  npm test'));
-  console.log('    Starts the test runner.');
+  console.log(chalk.cyan("  npm test"));
+  console.log("    Starts the test runner.");
   console.log();
-  console.log('I suggest that you begin by typing:');
+  console.log("I suggest that you begin by typing:");
   console.log();
-  console.log(chalk.cyan('  cd'), appName);
-  console.log(chalk.cyan('  npm start'));
+  console.log(chalk.cyan("  cd"), appName);
+  console.log(chalk.cyan("  npm start"));
   console.log();
 })();

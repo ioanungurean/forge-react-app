@@ -1,6 +1,6 @@
-@import 'shared.scss';
-@import 'sizes.scss';
-@import 'colors.scss';
+@import "shared.scss";
+@import "sizes.scss";
+@import "colors.scss";
 
 .app {
   display: flex;
@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
 
-    >:not(:last-child) {
+    > :not(:last-child) {
       margin-right: 1rem;
     }
 
@@ -22,7 +22,7 @@
     height: 3rem;
     padding: map-get($sizes, padding-large);
 
-    background-image: url('~ui/assets/images/react.svg');
+    background-image: url("~ui/assets/images/react.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

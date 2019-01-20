@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Title from 'components/Title/Title';
+import Title from "components/Title/Title";
 
-import './App.scss';
+import "./App.scss";
 
 class App extends Component {
   render() {
