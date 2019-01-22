@@ -1,8 +1,19 @@
 #!/usr/bin/env node
 
 const fs = require("fs");
+const inquirer = require("inquirer");
 const chalk = require("chalk");
 const spawnSync = require("cross-spawn").sync;
+
+const choices = fs.readdirSync(`${__dirname}/../templates`);
+const questions = [
+  {
+    name: "app-choice",
+    type: "list",
+    message: "What application template would you like to generate?",
+    choices: choices
+  }
+];
 
 const defaultAppName = "forge-react-app";
 const currDir = process.cwd();
@@ -30,10 +41,11 @@ function buildStructure(templatePath, newAppPath) {
   });
 }
 
-(function() {
+inquirer.prompt(questions).then(answers => {
+  const appChoice = answers["app-choice"];
   const appName = process.argv[2] ? process.argv[2] : defaultAppName;
   const appPath = `${currDir}/${appName}`;
-  const templatePath = `${__dirname}/../forge-react-app`;
+  const templatePath = `${__dirname}/../templates/${appChoice}`;
 
   console.log(chalk.cyan("Forging a new React application..."));
   console.log();
@@ -69,4 +81,4 @@ function buildStructure(templatePath, newAppPath) {
   console.log(chalk.cyan("  cd"), appName);
   console.log(chalk.cyan("  npm start"));
   console.log();
-})();
+});

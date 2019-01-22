@@ -1,5 +1,5 @@
 # Forge React App
-React starter using Webpack 4 with a highly scalable architecture and a [production build 3 times smaller](#production-build-size) than [Create React App](https://github.com/facebook/create-react-app)
+Forge React App: React starter that uses TypeScript or ECMAScript bundled with Webpack 4 that has a highly scalable folder structure and a [production build 5 times smaller](#production-build-size) than [Create React App](https://github.com/facebook/create-react-app)
 
 Create React apps with no initial build configuration.
 * [Creating an App](#creating-an-app) – How to create a new app.
@@ -51,13 +51,13 @@ Inside that directory, it will generate the initial project structure and instal
     │   └── Title
     │       ├── test
     │       │   └── Title.test.js
-    │       ├── Title.js
+    │       ├── Title.jsx
     │       └── Title.scss
     ├── favicon.ico
-    ├── index.js
+    ├── index.jsx
     ├── modules
     │   ├── App
-    │   │   ├── App.js
+    │   │   ├── App.jsx
     │   │   ├── App.scss
     │   │   └── test
     │   │       └── App.test.js
@@ -124,6 +124,7 @@ forge-react-app my-app
 | Package       |Version |
 | ------------- |--------|
 | React         |^16.x |
+| TypeScript    |^3.x |
 | Jest          |^23.x |
 | Enzyme        |^3.x  |
 | Babel         |^7.x  |
@@ -136,11 +137,9 @@ forge-react-app my-app
 * [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
 
 ## Production build size
-* All (43.95 KB) (gzip)
-    * vendor.ae9379741f871b6ba2be.js (41.73 KB)
-    * index.1f1cbf641d603d86f8ee.js (2.22 KB)
+* All (36.61 KB) (gzip)
+    * vendor.a106ef9a79e0a54d062b.js (35.09 KB)
+    * index.4bc3d8a674d7249b58c8.js (1.52 KB)
 
 ## Feedback and suggestions
-If you want to leave some suggestions or give me constructive feedback please don't hesitate to [file an issue](https://github.com/ioanungurean/forge-react-app/issues/new). I will gladdly look into it.
-
-Thank you for your time! :wink:
+If you want to leave some suggestions or give me constructive feedback please don't hesitate to [file an issue](https://github.com/ioanungurean/forge-react-app/issues/new).

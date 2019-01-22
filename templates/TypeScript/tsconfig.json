@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "./public/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "lib": ["es2015", "es2016", "es2017", "es2018", "dom"],
+    "baseUrl": "./",
+    "paths": {
+      "components/*": ["src/components/*"],
+      "modules/*": ["src/modules/*"],
+      "utils/*": ["src/utils/*"]
+    }
+  },
+  "include": ["./src/**/*"]
+}

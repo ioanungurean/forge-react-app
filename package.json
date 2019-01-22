@@ -1,8 +1,7 @@
 {
   "name": "forge-react-app",
   "version": "3.4.7",
-  "description": "Forge React App: React starter using Webpack 4",
-  "main": "index.js",
+  "description": "Forge React App: React starter that uses TypeScript or ECMAScript bundled with Webpack 4",
   "homepage": "https://github.com/ioanungurean/forge-react-app",
   "author": {
     "name": "Ioan Ungurean",
@@ -15,11 +14,10 @@
   "license": "MIT",
   "keywords": [
     "react",
+    "typescript",
     "webpack",
     "jest",
-    "enzyme",
-    "starter",
-    "boilerplate"
+    "enzyme"
   ],
   "bin": {
     "forge-react-app": "./tasks/fra.js"
@@ -29,6 +27,7 @@
   },
   "dependencies": {
     "chalk": "^2.4.2",
-    "cross-spawn": "^6.0.5"
+    "cross-spawn": "^6.0.5",
+    "inquirer": "^6.2.1"
   }
 }
