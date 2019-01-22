@@ -51,13 +51,13 @@ Inside that directory, it will generate the initial project structure and instal
     │   └── Title
     │       ├── test
     │       │   └── Title.test.js
-    │       ├── Title.js
+    │       ├── Title.jsx
     │       └── Title.scss
     ├── favicon.ico
-    ├── index.js
+    ├── index.jsx
     ├── modules
     │   ├── App
-    │   │   ├── App.js
+    │   │   ├── App.jsx
     │   │   ├── App.scss
     │   │   └── test
     │   │       └── App.test.js
@@ -141,6 +141,4 @@ forge-react-app my-app
     * index.1f1cbf641d603d86f8ee.js (2.22 KB)
 
 ## Feedback and suggestions
-If you want to leave some suggestions or give me constructive feedback please don't hesitate to [file an issue](https://github.com/ioanungurean/forge-react-app/issues/new). I will gladdly look into it.
-
-Thank you for your time! :wink:
+If you want to leave some suggestions or give me constructive feedback please don't hesitate to [file an issue](https://github.com/ioanungurean/forge-react-app/issues/new).
