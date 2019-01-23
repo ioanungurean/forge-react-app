@@ -2,12 +2,12 @@ import * as React from "react";
 
 import "./Title.scss";
 
-interface TitleProps {
+interface ITitleProps {
   title: string;
 }
 
-export default class Title extends React.Component<TitleProps> {
-  render() {
-    return <span className="title">{this.props.title}</span>;
-  }
-}
+const Title: React.FunctionComponent<ITitleProps> = ({ title }) => (
+  <span className="title">{title}</span>
+);
+
+export default Title;

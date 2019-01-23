@@ -2,7 +2,7 @@
   "name": "forge-react-app",
   "version": "1.0.0",
   "description": "Forge React App",
-  "main": "index.js",
+  "main": "./src/index.tsx",
   "author": "",
   "license": "",
   "scripts": {
