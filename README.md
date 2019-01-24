@@ -36,38 +36,29 @@ Inside that directory, it will generate the initial project structure and instal
 ```sh
 .
 ├── devtools
-│   ├── test
-│   │   ├── enzyme.config.js
-│   │   └── mocks
-│   ├── webpack
-│   │   ├── development.js
-│   │   ├── plugins.js
-│   │   └── production.js
 │   └── webpack.config.js
-├── package.json
-├── package-lock.json
 └── src
     ├── components
     │   └── Title
     │       ├── test
-    │       │   └── Title.test.js
-    │       ├── Title.jsx
+    │       │   └── Title.test.tsx
+    │       ├── Title.tsx
     │       └── Title.scss
     ├── favicon.ico
-    ├── index.jsx
+    ├── index.tsx
     ├── modules
     │   ├── App
-    │   │   ├── App.jsx
+    │   │   ├── App.tsx
     │   │   ├── App.scss
     │   │   └── test
-    │   │       └── App.test.js
+    │   │       └── App.test.tsx
     └── ui
         ├── assets
         │   └── images
         └── shared
+            ├── sizes.scss
             ├── colors.scss
             ├── normalize.scss
-            ├── sizes.scss
             └── shared.scss
 ```
 
