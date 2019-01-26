@@ -112,14 +112,14 @@ forge-react-app my-app
 ```
 
 ## Main dependencies
-| Package       |Version |
-| ------------- |--------|
-| React         |^16.x |
-| TypeScript    |^3.x |
-| Jest          |^23.x |
-| Enzyme        |^3.x  |
-| Babel         |^7.x  |
-| Webpack       |^4.x  |
+| Package       | Version | Details                |
+| ------------- |---------|------------------------|
+| React         | ^16.x   |                        |
+| TypeScript    | ^3.x    | for TypeScript version |
+| Jest          | ^24.x   |                        |
+| Enzyme        | ^3.x    |                        |
+| Babel         | ^7.x    | for ECMAScript version |
+| Webpack       | ^4.x    |                        |
 
 ## Features
 * Scope Hoisting
