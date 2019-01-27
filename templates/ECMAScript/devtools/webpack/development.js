@@ -1,7 +1,7 @@
 const path = require("path");
 const plugins = require("./plugins");
 
-module.exports = config => {
+module.exports = () => {
   return {
     entry: {
       index: [path.resolve("src/index.jsx")],
