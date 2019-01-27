@@ -21,7 +21,7 @@ module.exports = params => {
 
       module: {
         rules: [
-          { test: /\.tsx?$/, use: "awesome-typescript-loader" },
+          { test: /\.tsx?$/, use: "ts-loader" },
           { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
           {
             test: /\.(css|scss)$/,
