@@ -47,11 +47,11 @@ Inside that directory, it will generate the initial project structure and instal
     ├── favicon.ico
     ├── index.tsx
     ├── modules
-    │   ├── App
-    │   │   ├── App.tsx
-    │   │   ├── App.scss
-    │   │   └── test
-    │   │       └── App.test.tsx
+    │   └── App
+    │       ├── App.tsx
+    │       ├── App.scss
+    │       └── test
+    │           └── App.test.tsx
     └── ui
         ├── assets
         │   └── images
