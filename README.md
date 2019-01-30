@@ -38,18 +38,20 @@ Inside that directory, it will generate the initial project structure and instal
 ├── devtools
 │   └── webpack.config.js
 └── src
+    ├── index.tsx
+    ├── favicon.ico
     ├── components
     │   └── Title
     │       ├── test
     │       │   └── Title.test.tsx
+    │       ├── index.tsx
     │       ├── Title.tsx
     │       └── Title.scss
-    ├── favicon.ico
-    ├── index.tsx
     ├── modules
     │   └── App
+    │       ├── index.tsx
     │       ├── App.tsx
-    │       ├── App.scss
+    │       └── App.scss
     │       └── test
     │           └── App.test.tsx
     └── ui
