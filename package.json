@@ -28,6 +28,6 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "cross-spawn": "^6.0.5",
-    "inquirer": "^6.2.1"
+    "inquirer": "^6.2.2"
   }
 }
