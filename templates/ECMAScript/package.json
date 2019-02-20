@@ -16,7 +16,7 @@
     "analyze": "webpack --config devtools/webpack.config --env.mode=production --env.eval=true"
   },
   "dependencies": {
-    "prop-types": "^15.6.2",
+    "prop-types": "^15.7.2",
     "react": "^16.8.2",
     "react-dom": "^16.8.2"
   },
