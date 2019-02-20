@@ -14,7 +14,7 @@ matrix:
       script:
         - npm test
         - npm run build
-    - env: ECMAScript
+    - env: TypeScript
       before_script:
         - cd ${TRAVIS_BUILD_DIR}/templates/TypeScript
         - npm install

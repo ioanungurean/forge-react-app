@@ -1,69 +1,82 @@
-# Forge React App
-Forge React App: React starter that uses TypeScript or ECMAScript bundled with Webpack 4 that has a highly scalable folder structure and a [production build 5 times smaller](#production-build-size) than [Create React App](https://github.com/facebook/create-react-app)
+# Forge React App [![Build Status](https://travis-ci.com/ioanungurean/forge-react-app.svg?branch=master)](https://travis-ci.com/ioanungurean/forge-react-app)
 
-Create React apps with no initial build configuration.
-* [Creating an App](#creating-an-app) – How to create a new app.
+Forge React apps with no build configuration. (TypeScript or ECMAScript)
+
+- [Creating an App](#creating-an-app) – How to create a new app.
 
 Forge React App works on macOS, Windows, and Linux.<br>
 If something doesn’t work, please [file an issue](https://github.com/ioanungurean/forge-react-app/issues/new).
 
-## Quick overview
+## Quick Overview
 ```sh
 npx forge-react-app my-app
 cd my-app
 npm start
 ```
 
-*([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher, see [instructions for older npm versions](#instructions-for-older-npm-versions))*
+_([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
 
-Then open [http://localhost:9000](http://localhost:9000) to see your app.<br>
+Then open [http://localhost:9000/](http://localhost:9000/) to see your app.<br>
 When you’re ready to deploy to production, create a minified bundle with `npm run build`.
 
-## Creating an app
-**You’ll need to have Node >= 6 on your local development machine** (but it’s not required on the server). You can use [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to easily switch Node versions between different projects.
+### Get Started Immediately
+You **don’t** need to install or configure tools like Webpack or Babel.<br>
+They are preconfigured so that you can focus on the code.
 
-To create a new app, run a single command:
+Just create a project, and you’re good to go.
 
+## Creating an App
+**You’ll need to have Node 8.10.0 or later on your local development machine** (but it’s not required on the server). You can use [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to easily switch Node versions between different projects.
+
+To create a new app, you may choose one of the following methods:
+
+### npx
 ```sh
-npx forge-react-app my-app
+npx create-react-app my-app
 ```
 
-*([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))*
+_([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
 
 It will create a directory called `my-app` inside the current folder.<br>
 Inside that directory, it will generate the initial project structure and install the transitive dependencies:
 
-```sh
-.
+```
+my-app
+├── node_modules
+├── package.json
+├── .gitignore
 ├── devtools
 │   └── webpack.config.js
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── index.js
+│   └── vendor.js
 └── src
-    ├── index.tsx
-    ├── favicon.ico
+    ├── index.js
     ├── components
     │   └── Title
-    │       ├── test
-    │       │   └── Title.test.tsx
     │       ├── index.tsx
     │       ├── Title.tsx
-    │       └── Title.scss
+    │       ├── Title.scss
+    │       └── test
+    │           └── Title.test.tsx
     ├── modules
     │   └── App
     │       ├── index.tsx
     │       ├── App.tsx
-    │       └── App.scss
+    │       ├── App.scss
     │       └── test
     │           └── App.test.tsx
     └── ui
         ├── assets
         │   └── images
         └── shared
-            ├── sizes.scss
             ├── colors.scss
-            ├── normalize.scss
-            └── shared.scss
+            └── sizes.scss
 ```
 
+No configuration or complicated folder structures, just the files you need to build your app.<br>
 Once the installation is done, you can open your project folder:
 
 ```sh
@@ -72,26 +85,25 @@ cd my-app
 
 Inside the newly created project, you can run some built-in commands:
 
-#### `npm start` or `yarn start`
+### `npm start` or `yarn start`
 Runs the app in development mode.<br>
 Open [http://localhost:9000](http://localhost:9000) to view it in the browser.
 
-The page will automatically modify when you make changes to the code. <br>
+The page will automatically reload if you make changes to the code.<br>
 You will see the build errors and lint warnings in the console.
 
-#### `npm run test` or `yarn test`
+### `npm test` or `yarn test`
 Runs the test watcher in an interactive mode.<br>
-By default, runs tests related to files changed since the last commit.
 
-#### `npm run build` or `yarn build`
-Builds the app for production to the `public` folder.<br>
+### `npm run build` or `yarn build`
+Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br>
 
 Your app is ready to be deployed.
 
-#### `npm run analyze` or `yarn analyze` (Webpack Bundle Analyzer)
+### `npm run analyze` or `yarn analyze` (Webpack Bundle Analyzer)
 This script will help you:
 * Realize what's really inside your bundle
 * Find out what modules make up the most of it's size
@@ -99,19 +111,13 @@ This script will help you:
 * Optimize it!
 * And the best thing is it supports minified bundles. It parses them to get real size of bundled modules. And it also shows their gzipped sizes.
 
-## Instructions for older `npm` versions
-If you use npm 5.1 or earlier, you can't use `npx`.
-Instead, install `forge-react-app` globally:
+## Features
+- **No Configuration Required:** You don't need to configure anything. A reasonably good configuration of both development and production builds is handled for you so you can focus on writing code.
 
-```sh
-npm install -g forge-react-app
-```
+- **Highly Scalable Folder Structure**
 
-Now you can run:
+- **[Small Production Build Size](#production-build-size)**
 
-```
-forge-react-app my-app
-```
 
 ## Main dependencies
 | Package       | Version | Details                |
@@ -123,12 +129,6 @@ forge-react-app my-app
 | Babel         | ^7.x    | for ECMAScript version |
 | Webpack       | ^4.x    |                        |
 
-## Features
-* Scope Hoisting
-* Uglification of base app via `webpack --mode production`
-* Deterministic Hashes
-* [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
-
 ## Production build size
 * All (36.61 KB) (gzip)
     * vendor.a106ef9a79e0a54d062b.js (35.09 KB)
@@ -136,3 +136,7 @@ forge-react-app my-app
 
 ## Feedback and suggestions
 If you want to leave some suggestions or give me constructive feedback please don't hesitate to [file an issue](https://github.com/ioanungurean/forge-react-app/issues/new).
+
+## License
+
+Forge React App is open source software [licensed as MIT](https://github.com/ioanungurean/forge-react-app/blob/master/LICENSE.md).
