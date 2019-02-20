@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@types/enzyme": "^3.1.18",
-    "@types/enzyme-adapter-react-16": "^1.0.3",
+    "@types/enzyme-adapter-react-16": "^1.0.4",
     "@types/jest": "^24.0.6",
     "css-loader": "^2.1.0",
     "enzyme": "^3.9.0",
