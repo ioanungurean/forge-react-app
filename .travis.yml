@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - "$HOME/.npm"
+matrix:
+  fast_finish: true
+  include:
+    - env: ECMAScript
+      before_script:
+        - cd ${TRAVIS_BUILD_DIR}/templates/ECMAScript
+        - npm install
+      script:
+        - npm test
+        - npm run build
+    - env: ECMAScript
+      before_script:
+        - cd ${TRAVIS_BUILD_DIR}/templates/TypeScript
+        - npm install
+      script:
+        - npm test
+        - npm run build
+on:
+  branch: master
