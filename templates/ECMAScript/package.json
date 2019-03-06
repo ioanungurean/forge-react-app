@@ -17,8 +17,8 @@
   },
   "dependencies": {
     "prop-types": "^15.7.2",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
@@ -42,7 +42,7 @@
     "node-sass": "^4.11.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "path": "^0.12.7",
-    "react-test-renderer": "^16.8.3",
+    "react-test-renderer": "^16.8.4",
     "rimraf": "^2.6.3",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
