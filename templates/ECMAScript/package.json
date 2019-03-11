@@ -25,7 +25,7 @@
     "@babel/plugin-transform-react-jsx": "^7.3.0",
     "@babel/preset-env": "^7.3.4",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^24.1.0",
+    "babel-jest": "^24.3.1",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
     "enzyme": "^3.9.0",
