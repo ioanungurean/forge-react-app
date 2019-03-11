@@ -16,7 +16,7 @@
     "analyze": "webpack --config devtools/webpack.config --env.mode=production --env.eval=true"
   },
   "dependencies": {
-    "@types/react": "^16.8.6",
+    "@types/react": "^16.8.7",
     "@types/react-dom": "^16.8.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
