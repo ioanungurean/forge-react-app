@@ -42,7 +42,7 @@
     "node-sass": "^4.11.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "path": "^0.12.7",
-    "react-test-renderer": "^16.8.5",
+    "react-test-renderer": "^16.8.6",
     "rimraf": "^2.6.3",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
