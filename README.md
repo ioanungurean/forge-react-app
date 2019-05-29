@@ -30,7 +30,7 @@ To create a new app, you may choose one of the following methods:
 
 ### npx
 ```sh
-npx create-react-app my-app
+npx forge-react-app my-app
 ```
 
 It will create a directory called `my-app` inside the current folder.<br>
