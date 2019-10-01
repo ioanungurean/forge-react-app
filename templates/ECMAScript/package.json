@@ -31,7 +31,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "enzyme-to-json": "^3.4.0",
-    "error-overlay-webpack-plugin": "^0.3.0",
+    "error-overlay-webpack-plugin": "^0.4.1",
     "file-loader": "^4.2.0",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
