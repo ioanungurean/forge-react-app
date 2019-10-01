@@ -45,7 +45,7 @@
     "sass-loader": "^7.3.1",
     "source-map-loader": "^0.2.4",
     "style-loader": "^1.0.0",
-    "ts-jest": "^24.0.2",
+    "ts-jest": "^24.1.0",
     "ts-loader": "^6.2.0",
     "typescript": "^3.6.2",
     "uglifyjs-webpack-plugin": "^2.2.0",
