@@ -1,6 +1,6 @@
 {
   "name": "forge-react-app",
-  "version": "4.1.3",
+  "version": "4.1.4",
   "description": "Forge React App: React starter that uses TypeScript or ECMAScript bundled with Webpack 4",
   "homepage": "https://github.com/ioanungurean/forge-react-app",
   "author": {
@@ -27,7 +27,7 @@
     "build": "npm run build --prefix templates/ECMAScript && npm run build --prefix templates/TypeScript"
   },
   "dependencies": {
-    "chalk": "^2.4.2",
+    "chalk": "^3.0.0",
     "cross-spawn": "^7.0.1",
     "inquirer": "^7.0.0"
   }
