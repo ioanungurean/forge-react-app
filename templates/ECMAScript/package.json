@@ -21,7 +21,7 @@
     "react-dom": "^16.10.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.2",
+    "@babel/core": "^7.7.4",
     "@babel/plugin-transform-react-jsx": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "babel-core": "^7.0.0-bridge.0",
