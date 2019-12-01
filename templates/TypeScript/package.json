@@ -27,7 +27,7 @@
     "@types/jest": "^24.0.18",
     "css-loader": "^3.2.0",
     "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-adapter-react-16": "^1.15.1",
     "enzyme-to-json": "^3.4.3",
     "file-loader": "^4.2.0",
     "friendly-errors-webpack-plugin": "^1.7.0",
