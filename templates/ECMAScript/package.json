@@ -6,7 +6,7 @@
   "author": "",
   "license": "",
   "scripts": {
-    "start": "webpack-dev-server --config devtools/webpack.config",
+    "start": "webpack-dev-server --config devtools/webpack.config --hot",
     "prebuild": "rimraf public",
     "build": "webpack --config devtools/webpack.config --env.mode=production",
     "test": "jest",
@@ -24,7 +24,6 @@
     "@babel/core": "^7.7.5",
     "@babel/plugin-transform-react-jsx": "^7.7.4",
     "@babel/preset-env": "^7.7.6",
-    "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.0",

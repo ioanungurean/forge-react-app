@@ -6,7 +6,7 @@
   "author": "",
   "license": "",
   "scripts": {
-    "start": "webpack-dev-server --config devtools/webpack.config",
+    "start": "webpack-dev-server --config devtools/webpack.config --hot",
     "prebuild": "rimraf public",
     "build": "webpack --config devtools/webpack.config --env.mode=production",
     "test": "jest",
@@ -30,6 +30,7 @@
     "enzyme-adapter-react-16": "^1.15.1",
     "enzyme-to-json": "^3.4.3",
     "file-loader": "^5.0.2",
+    "error-overlay-webpack-plugin": "^0.4.1",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
     "html-webpack-template": "^6.2.0",

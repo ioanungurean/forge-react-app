@@ -1,5 +1,4 @@
 @import "shared.scss";
-@import "sizes.scss";
 @import "colors.scss";
 
 .app {
@@ -20,7 +19,7 @@
   .icon-react {
     width: 3rem;
     height: 3rem;
-    padding: map-get($sizes, padding-large);
+    padding: 2rem;
 
     background-image: url("~ui/assets/images/react.svg");
     background-repeat: no-repeat;

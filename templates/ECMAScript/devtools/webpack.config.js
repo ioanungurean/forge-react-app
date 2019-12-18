@@ -39,7 +39,7 @@ module.exports = params => {
                 loader: "sass-loader",
                 options: {
                   sassOptions: {
-                    includePaths: [path.resolve(`src/ui/shared`)]
+                    includePaths: [path.resolve(`src/ui/styles`)]
                   }
                 }
               }

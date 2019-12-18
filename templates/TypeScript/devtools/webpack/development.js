@@ -36,6 +36,7 @@ module.exports = () => {
 
     plugins: [
       plugins.HotModuleReplacementPlugin,
+      plugins.ErrorOverlayWebpackPlugin,
       plugins.FriendlyErrorsWebpackPlugin
     ],
 

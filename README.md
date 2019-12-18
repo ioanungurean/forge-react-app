@@ -67,9 +67,8 @@ my-app
     └── ui
         ├── assets
         │   └── images
-        └── shared
-            ├── colors.scss
-            └── sizes.scss
+        └── styles
+            └── colors.scss
 ```
 
 No configuration or complicated folder structures, just the files you need to build your app.<br>
