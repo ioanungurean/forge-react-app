@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
+const path = require("path");
 const fs = require("fs");
 const inquirer = require("inquirer");
 const chalk = require("chalk");
 const spawnSync = require("cross-spawn").sync;
 
-const choices = fs.readdirSync(`${__dirname}/../templates`);
+const choices = fs.readdirSync(path.join(__dirname, "..", "templates"));
 const questions = [
   {
     name: "app-choice",
@@ -22,7 +23,7 @@ function buildStructure(templatePath, newAppPath) {
   const filesToCreate = fs.readdirSync(templatePath);
 
   filesToCreate.forEach(file => {
-    const origFilePath = `${templatePath}/${file}`;
+    const origFilePath = path.join(templatePath, file);
 
     // get stats about the current file
     const stats = fs.statSync(origFilePath);
@@ -30,13 +31,16 @@ function buildStructure(templatePath, newAppPath) {
     if (stats.isFile()) {
       const content = fs.readFileSync(origFilePath);
 
-      const writePath = `${currDir}/${newAppPath}/${file}`;
+      const writePath = path.join(currDir, newAppPath, file);
       fs.writeFileSync(writePath, content);
     } else if (stats.isDirectory()) {
-      fs.mkdirSync(`${currDir}/${newAppPath}/${file}`);
+      fs.mkdirSync(path.join(currDir, newAppPath, file));
 
       // recursive call
-      buildStructure(`${templatePath}/${file}`, `${newAppPath}/${file}`);
+      buildStructure(
+        path.join(templatePath, file),
+        path.join(newAppPath, file)
+      );
     }
   });
 }
@@ -44,14 +48,19 @@ function buildStructure(templatePath, newAppPath) {
 inquirer.prompt(questions).then(answers => {
   const appChoice = answers["app-choice"];
   const appName = process.argv[2] ? process.argv[2] : defaultAppName;
-  const appPath = `${currDir}/${appName}`;
-  const templatePath = `${__dirname}/../templates/${appChoice}`;
+  const appPath = path.join(currDir, appName);
+
+  console.log("### appPath ####", appPath);
+  const templatePath = path.join(__dirname, "..", "templates", appChoice);
 
   console.log(chalk.cyan("Forging a new React application..."));
   console.log();
   fs.mkdirSync(appPath);
   buildStructure(templatePath, appName);
-  fs.renameSync(`${appPath}/.ignorefile`, `${appPath}/.gitignore`);
+  fs.renameSync(
+    path.join(appPath, ".ignorefile"),
+    path.join(appPath, ".gitignore")
+  );
 
   console.log(chalk.cyan("Running npm install..."));
   console.log();
