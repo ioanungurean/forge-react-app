@@ -1,10 +1,10 @@
-import * as React from "react";
+import React, { Component } from "react";
 
 import Title from "components/Title";
 
 import "./App.scss";
 
-export default class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <div className="app">
@@ -18,3 +18,5 @@ export default class App extends React.Component {
     );
   }
 }
+
+export default App;

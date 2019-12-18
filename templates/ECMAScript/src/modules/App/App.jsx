@@ -4,7 +4,7 @@ import Title from "components/Title/Title";
 
 import "./App.scss";
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
       <div className="app">
@@ -18,3 +18,5 @@ export default class App extends Component {
     );
   }
 }
+
+export default App;

@@ -35,8 +35,9 @@ module.exports = params => {
               {
                 loader: "sass-loader",
                 options: {
-                  sourceMap: true,
-                  includePaths: [path.resolve(`src/ui/shared`)]
+                  sassOptions: {
+                    includePaths: [path.resolve(`src/ui/shared`)]
+                  }
                 }
               }
             ]
