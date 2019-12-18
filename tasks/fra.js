@@ -50,7 +50,6 @@ inquirer.prompt(questions).then(answers => {
   const appName = process.argv[2] ? process.argv[2] : defaultAppName;
   const appPath = path.join(currDir, appName);
 
-  console.log("### appPath ####", appPath);
   const templatePath = path.join(__dirname, "..", "templates", appChoice);
 
   console.log(chalk.cyan("Forging a new React application..."));
