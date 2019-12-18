@@ -64,7 +64,8 @@ inquirer.prompt(questions).then(answers => {
   console.log(chalk.cyan("Running npm install..."));
   console.log();
   try {
-    spawnSync("npm", ["install", "--loglevel", "error", "--prefix", appPath], {
+    spawnSync("npm", ["install", "--loglevel", "error", "--prefix"], {
+      cwd: appPath,
       stdio: "inherit"
     });
   } catch (error) {
