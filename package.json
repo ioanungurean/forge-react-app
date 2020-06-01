@@ -27,7 +27,7 @@
     "build": "npm run build --prefix templates/ECMAScript && npm run build --prefix templates/TypeScript"
   },
   "dependencies": {
-    "chalk": "^3.0.0",
+    "chalk": "^4.0.0",
     "cross-spawn": "^7.0.3",
     "inquirer": "^7.1.0"
   }
