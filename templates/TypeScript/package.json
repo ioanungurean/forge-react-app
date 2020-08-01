@@ -43,7 +43,7 @@
     "path": "^0.12.7",
     "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
-    "sass-loader": "^8.0.2",
+    "sass-loader": "^9.0.2",
     "source-map-loader": "^0.2.4",
     "style-loader": "^1.2.1",
     "ts-jest": "^25.5.1",
