@@ -48,7 +48,7 @@
     "style-loader": "^1.2.1",
     "ts-jest": "^25.5.1",
     "ts-loader": "^6.2.2",
-    "typescript": "^3.9.5",
+    "typescript": "^3.9.7",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.43.0",
     "webpack-bundle-analyzer": "^3.8.0",
