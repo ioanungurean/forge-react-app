@@ -44,7 +44,7 @@
     "path": "^0.12.7",
     "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
-    "sass-loader": "^8.0.2",
+    "sass-loader": "^10.0.1",
     "style-loader": "^1.2.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.44.1",
