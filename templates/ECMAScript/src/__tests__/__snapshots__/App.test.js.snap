@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlertCard Renders a card with a counter 1`] = `
+.c0 {
+  color: #61dbfb;
+}
+
+<div>
+  <h1
+    class="c0"
+  >
+    React App
+  </h1>
+</div>
+`;

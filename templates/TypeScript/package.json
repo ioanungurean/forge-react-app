@@ -1,91 +1,49 @@
 {
-  "name": "forge-react-app",
+  "name": "React App",
   "version": "1.0.0",
-  "description": "Forge React App",
-  "main": "./src/index.tsx",
-  "author": "",
-  "license": "",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config devtools/webpack.config --hot",
-    "prebuild": "rimraf public",
-    "build": "webpack --config devtools/webpack.config --env.mode=production",
+    "start": "webpack serve --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js",
     "test": "jest",
-    "test:upd": "jest --updateSnapshot",
-    "test:cov": "jest --coverage",
-    "preanalyze": "rimraf public",
-    "analyze": "webpack --config devtools/webpack.config --env.mode=production --env.eval=true"
+    "check-types": "tsc"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@types/jest": "^26.0.15",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-styled-components": "^1.11.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "jest": "^26.6.0",
+    "jest-styled-components": "^7.0.3",
+    "terser-webpack-plugin": "^5.0.0",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3",
+    "webpack": "^5.2.0",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.2.0"
   },
   "dependencies": {
-    "@types/react": "^16.9.41",
+    "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "@types/styled-components": "^5.1.4",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "styled-components": "^5.2.0"
   },
-  "devDependencies": {
-    "@types/enzyme": "^3.10.5",
-    "@types/enzyme-adapter-react-16": "^1.0.6",
-    "@types/jest": "^26.0.13",
-    "css-loader": "^4.2.2",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
-    "enzyme-to-json": "^3.5.0",
-    "file-loader": "^6.1.0",
-    "error-overlay-webpack-plugin": "^0.4.1",
-    "friendly-errors-webpack-plugin": "^1.7.0",
-    "html-webpack-plugin": "^3.2.0",
-    "html-webpack-template": "^6.2.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^25.5.4",
-    "jest-cli": "^26.2.2",
-    "mini-css-extract-plugin": "^0.9.0",
-    "node-sass": "^4.14.1",
-    "optimize-css-assets-webpack-plugin": "^5.0.3",
-    "path": "^0.12.7",
-    "react-test-renderer": "^16.13.1",
-    "rimraf": "^3.0.2",
-    "sass-loader": "^10.0.2",
-    "source-map-loader": "^1.0.1",
-    "style-loader": "^1.2.1",
-    "ts-jest": "^25.5.1",
-    "ts-loader": "^8.0.3",
-    "typescript": "^3.9.7",
-    "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^4.44.1",
-    "webpack-bundle-analyzer": "^3.8.0",
-    "webpack-chunk-hash": "^0.6.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^4.2.2"
-  },
-  "jest": {
-    "roots": [
-      "src/"
-    ],
-    "moduleDirectories": [
-      "node_modules",
-      "src"
-    ],
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": "(/test/.*|(\\.|/)(test|spec))\\.tsx?$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ],
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/devtools/test/mocks/file.mock.js",
-      "^.+\\.(css|scss)$": "identity-obj-proxy"
-    },
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
-    "setupFilesAfterEnv": [
-      "<rootDir>/devtools/test/enzyme.config.ts"
-    ]
+  "resolutions": {
+    "styled-components": "^5"
   }
 }

@@ -34,41 +34,32 @@ npx forge-react-app my-app
 ```
 
 It will create a directory called `my-app` inside the current folder.<br>
-Inside that directory, it will generate the initial project structure and install the transitive dependencies:
+Inside that directory, it will generate the initial project structure and install the transitive dependencies.
 
 ```
 my-app
-├── node_modules
-├── package.json
-├── .gitignore
-├── devtools
-│   └── webpack.config.js
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── index.js
-│   └── vendor.js
-└── src
-    ├── index.js
-    ├── components
-    │   └── Title
-    │       ├── index.tsx
-    │       ├── Title.tsx
-    │       ├── Title.scss
-    │       └── test
-    │           └── Title.test.tsx
-    ├── modules
-    │   └── App
-    │       ├── index.tsx
-    │       ├── App.tsx
-    │       ├── App.scss
-    │       └── test
-    │           └── App.test.tsx
-    └── ui
-        ├── assets
-        │   └── images
-        └── styles
-            └── colors.scss
+│   .babelrc
+│   .gitignore
+│   jest.config.js
+│   package-lock.json
+│   package.json
+│   setUpTests.js
+│
+├───config
+│       webpack.common.js
+│       webpack.dev.js
+│       webpack.prod.js
+│
+└───src
+    │   App.js
+    │   index.html
+    │   index.js
+    │
+    ├───styles
+    │       StyledApp.js
+    │
+    └───test
+            App.test.js
 ```
 
 No configuration or complicated folder structures, just the files you need to build your app.<br>
@@ -91,38 +82,22 @@ You will see the build errors and lint warnings in the console.
 Runs the test watcher in an interactive mode.<br>
 
 ### `npm run build` or `yarn build`
-Builds the app for production to the `build` folder.<br>
+Builds the app for production to the `dist` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br>
 
 Your app is ready to be deployed.
 
-### `npm run analyze` or `yarn analyze` (Webpack Bundle Analyzer)
-This script will help you:
-* Realize what's really inside your bundle
-* Find out what modules make up the most of it's size
-* Find modules that got there by mistake
-* Optimize it!
-* And the best thing is it supports minified bundles. It parses them to get real size of bundled modules. And it also shows their gzipped sizes.
-
-## Features
-- **No Configuration Required:** You don't need to configure anything. A reasonably good configuration of both development and production builds is handled for you so you can focus on writing code.
-
-- **Highly Scalable Folder Structure**
-
-- **[Small Production Build Size](#production-build-size)**
-
-
 ## Main dependencies
-| Package       | Version | Details                |
-| ------------- |---------|------------------------|
-| React         | ^16.x   |                        |
-| TypeScript    | ^3.x    | for TypeScript version |
-| Jest          | ^24.x   |                        |
-| Enzyme        | ^3.x    |                        |
-| Babel         | ^7.x    | for ECMAScript version |
-| Webpack       | ^4.x    |                        |
+| Package                | Version | Details                |
+| ---------------------- |---------|------------------------|
+| React                  | ^17.x   |                        |
+| TypeScript             | ^4.x    | for TypeScript version |
+| Jest                   | ^26.x   |                        |
+| React Testing Library  | ^11.x   |                        |
+| Babel                  | ^7.x    | for ECMAScript version |
+| Webpack                | ^5.x    |                        |
 
 ## Production build size
 * All (36.61 KB) (gzip)
