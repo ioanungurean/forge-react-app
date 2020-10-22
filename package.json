@@ -1,6 +1,6 @@
 {
   "name": "forge-react-app",
-  "version": "4.1.11",
+  "version": "5.0.0-alpha.0",
   "description": "Forge React App: React starter that uses TypeScript or ECMAScript bundled with Webpack 4",
   "homepage": "https://github.com/ioanungurean/forge-react-app",
   "author": {
