@@ -99,11 +99,6 @@ Your app is ready to be deployed.
 | Babel                  | ^7.x    | for ECMAScript version |
 | Webpack                | ^5.x    |                        |
 
-## Production build size
-* All (36.61 KB) (gzip)
-    * vendor.a106ef9a79e0a54d062b.js (35.09 KB)
-    * index.4bc3d8a674d7249b58c8.js (1.52 KB)
-
 ## Feedback and suggestions
 If you want to leave some suggestions or give me constructive feedback please don't hesitate to [file an issue](https://github.com/ioanungurean/forge-react-app/issues/new).
 
