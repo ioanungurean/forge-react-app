@@ -12,8 +12,8 @@ const questions = [
     name: "app-choice",
     type: "list",
     message: "What application template would you like to generate?",
-    choices: choices
-  }
+    choices: choices,
+  },
 ];
 
 const defaultAppName = "forge-react-app";
@@ -22,7 +22,7 @@ const currDir = process.cwd();
 function buildStructure(templatePath, newAppPath) {
   const filesToCreate = fs.readdirSync(templatePath);
 
-  filesToCreate.forEach(file => {
+  filesToCreate.forEach((file) => {
     const origFilePath = path.join(templatePath, file);
 
     // get stats about the current file
@@ -45,7 +45,7 @@ function buildStructure(templatePath, newAppPath) {
   });
 }
 
-inquirer.prompt(questions).then(answers => {
+inquirer.prompt(questions).then((answers) => {
   const appChoice = answers["app-choice"];
   const appName = process.argv[2] ? process.argv[2] : defaultAppName;
   const appPath = path.join(currDir, appName);
@@ -66,7 +66,7 @@ inquirer.prompt(questions).then(answers => {
   try {
     spawnSync("npm", ["install", "--loglevel", "error", "--prefix"], {
       cwd: appPath,
-      stdio: "inherit"
+      stdio: "inherit",
     });
   } catch (error) {
     console.log(chalk.red("Error: "), error);

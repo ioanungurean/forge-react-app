@@ -7,14 +7,14 @@ cache:
 matrix:
   fast_finish: true
   include:
-    - env: ECMAScript
+    - env: ES
       before_script:
         - cd ${TRAVIS_BUILD_DIR}/templates/ECMAScript
         - npm install
       script:
         - npm test
         - npm run build
-    - env: TypeScript
+    - env: TS
       before_script:
         - cd ${TRAVIS_BUILD_DIR}/templates/TypeScript
         - npm install
