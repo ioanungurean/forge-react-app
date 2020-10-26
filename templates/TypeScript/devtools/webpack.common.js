@@ -4,10 +4,6 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   module: {
-    rules: [],
-  },
-
-  module: {
     rules: [
       {
         test: /\.(ts|js)x?$/,

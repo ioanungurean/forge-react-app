@@ -40,15 +40,14 @@ Inside that directory, it will generate the initial project structure and instal
 my-app
 │   .babelrc
 │   .gitignore
-│   jest.config.js
 │   package-lock.json
 │   package.json
-│   setUpTests.js
 │
-├───config
+├───devtools
 │       webpack.common.js
 │       webpack.dev.js
 │       webpack.prod.js
+│       setUpTests.js
 │
 └───src
     │   App.js
@@ -58,7 +57,7 @@ my-app
     ├───styles
     │       StyledApp.js
     │
-    └───test
+    └───__tests__
             App.test.js
 ```
 
@@ -96,7 +95,7 @@ Your app is ready to be deployed.
 | TypeScript             | ^4.x    | for TypeScript version |
 | Jest                   | ^26.x   |                        |
 | React Testing Library  | ^11.x   |                        |
-| Babel                  | ^7.x    | for ECMAScript version |
+| Babel                  | ^7.x    |                        |
 | Webpack                | ^5.x    |                        |
 
 ## Feedback and suggestions
