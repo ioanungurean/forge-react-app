@@ -36,7 +36,7 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
-    "@types/react": "^16.9.55",
+    "@types/react": "^17.0.0",
     "@types/react-dom": "^16.9.9",
     "@types/styled-components": "^5.1.7",
     "react": "^17.0.1",
