@@ -17,7 +17,7 @@
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.3",
+    "@testing-library/react": "^11.2.5",
     "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.12.0",
     "clean-webpack-plugin": "^3.0.0",
