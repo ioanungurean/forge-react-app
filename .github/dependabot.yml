@@ -1,0 +1,26 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  versioning-strategy: increase
+- package-ecosystem: npm
+  directory: "/templates/ECMAScript"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  versioning-strategy: increase
+- package-ecosystem: npm
+  directory: "/templates/TypeScript"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  versioning-strategy: increase
