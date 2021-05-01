@@ -29,7 +29,7 @@
     "jest-styled-components": "^7.0.3",
     "terser-webpack-plugin": "^5.1.1",
     "ts-jest": "^26.5.2",
-    "typescript": "^4.2.2",
+    "typescript": "^4.2.4",
     "webpack": "^5.24.2",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2",
