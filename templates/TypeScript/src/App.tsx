@@ -1,9 +1,14 @@
 import React from "react";
 
-import { StyledApp } from "./styles/StyledApp";
+import { GlobalStyle, StyledApp } from "./styles/StyledApp";
 
 const App: React.FC = () => {
-  return <StyledApp>React App</StyledApp>;
+  return (
+    <>
+      <GlobalStyle />
+      <StyledApp>React App</StyledApp>;
+    </>
+  );
 };
 
 export default App;
