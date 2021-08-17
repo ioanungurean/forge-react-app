@@ -6,7 +6,7 @@ const App: React.FC = () => {
   return (
     <>
       <GlobalStyle />
-      <StyledApp>React App</StyledApp>;
+      <StyledApp>React App</StyledApp>
     </>
   );
 };
