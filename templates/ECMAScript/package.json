@@ -26,7 +26,7 @@
     "jest": "^27.0.6",
     "jest-styled-components": "^7.0.5",
     "terser-webpack-plugin": "^5.1.4",
-    "webpack": "^5.50.0",
+    "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.8.0"
