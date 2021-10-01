@@ -23,7 +23,7 @@
     "babel-plugin-styled-components": "^1.13.2",
     "clean-webpack-plugin": "^4.0.0",
     "html-webpack-plugin": "^5.3.2",
-    "jest": "^27.1.0",
+    "jest": "^27.2.4",
     "jest-styled-components": "^7.0.5",
     "terser-webpack-plugin": "^5.2.0",
     "webpack": "^5.51.1",
