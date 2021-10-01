@@ -21,7 +21,7 @@
     "@babel/preset-typescript": "^7.15.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
-    "@types/jest": "^27.0.1",
+    "@types/jest": "^27.0.2",
     "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.13.2",
     "clean-webpack-plugin": "^4.0.0",
