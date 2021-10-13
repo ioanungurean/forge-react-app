@@ -1,4 +1,4 @@
-const path = require("path");
+const { resolve } = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
@@ -22,7 +22,7 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve("dist"),
+    path: resolve("dist"),
     filename: "[name].[contenthash].js",
     publicPath: "/",
   },
@@ -32,7 +32,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "React App",
       favicon: false,
-      template: path.resolve("src/index.html"),
+      template: resolve("src/index.html"),
     }),
   ],
 };

@@ -93,8 +93,8 @@ Your app is ready to be deployed.
 | ---------------------- |---------|------------------------|
 | React                  | ^17.x   |                        |
 | TypeScript             | ^4.x    | for TypeScript version |
-| Jest                   | ^26.x   |                        |
-| React Testing Library  | ^11.x   |                        |
+| Jest                   | ^27.x   |                        |
+| Testing Library        | ^12.x   |                        |
 | Babel                  | ^7.x    |                        |
 | Webpack                | ^5.x    |                        |
 

@@ -1,4 +1,4 @@
-const path = require("path");
+const { join } = require("path");
 const webpack = require("webpack");
 const { merge } = require("webpack-merge");
 
@@ -10,13 +10,12 @@ module.exports = merge(common, {
   devtool: "inline-source-map",
 
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
-    compress: true,
+    static: {
+      directory: join(__dirname, "dist"),
+    },
     historyApiFallback: true,
     hot: true, // TODO: Add fast refresh when stable
     open: true,
     port: 9000,
   },
-
-  plugins: [new webpack.HotModuleReplacementPlugin()],
 });
