@@ -89,14 +89,14 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed.
 
 ## Main dependencies
-| Package                | Version | Details                |
-| ---------------------- |---------|------------------------|
-| React                  | ^17.x   |                        |
-| TypeScript             | ^4.x    | for TypeScript version |
-| Jest                   | ^27.x   |                        |
-| Testing Library        | ^12.x   |                        |
-| Babel                  | ^7.x    |                        |
-| Webpack                | ^5.x    |                        |
+| Package                | Version | Details                    |
+| ---------------------- |---------|----------------------------|
+| React                  | ^18.x   |                            |
+| TypeScript             | ^4.x    | for the TypeScript version |
+| Jest                   | ^27.x   |                            |
+| Testing Library        | ^13.x   |                            |
+| Babel                  | ^7.x    |                            |
+| Webpack                | ^5.x    |                            |
 
 ## Feedback and suggestions
 If you want to leave some suggestions or give me constructive feedback please don't hesitate to [file an issue](https://github.com/ioanungurean/forge-react-app/issues/new).
