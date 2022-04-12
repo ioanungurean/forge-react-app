@@ -17,7 +17,7 @@
     "typescript",
     "webpack",
     "jest",
-    "enzyme"
+    "testing-library"
   ],
   "bin": {
     "forge-react-app": "./tasks/fra.js"
