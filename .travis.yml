@@ -10,14 +10,14 @@ matrix:
     - env: ES
       before_script:
         - cd ${TRAVIS_BUILD_DIR}/templates/ECMAScript
-        - npm install
+        - npm ci
       script:
         - npm test
         - npm run build
     - env: TS
       before_script:
         - cd ${TRAVIS_BUILD_DIR}/templates/TypeScript
-        - npm install
+        - npm ci
       script:
         - npm test
         - npm run build

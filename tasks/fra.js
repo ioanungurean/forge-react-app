@@ -11,7 +11,7 @@ const questions = [
   {
     name: "app-choice",
     type: "list",
-    message: "What application template would you like to generate?",
+    message: "Choose a template to generate...",
     choices: choices,
   },
 ];

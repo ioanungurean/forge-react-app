@@ -50,9 +50,9 @@ my-app
 │       setUpTests.js
 │
 └───src
-    │   App.js
-    │   index.html
     │   index.js
+    │   index.html
+    │   App.js
     │
     ├───styles
     │       StyledApp.js
@@ -91,12 +91,12 @@ Your app is ready to be deployed.
 ## Main dependencies
 | Package                | Version | Details                    |
 | ---------------------- |---------|----------------------------|
-| React                  | ^18.x   |                            |
-| TypeScript             | ^4.x    | for the TypeScript version |
-| Jest                   | ^27.x   |                            |
-| Testing Library        | ^13.x   |                            |
-| Babel                  | ^7.x    |                            |
-| Webpack                | ^5.x    |                            |
+| React                  | ^18     |                            |
+| TypeScript             | ^4      | for the TypeScript version |
+| Jest                   | ^28     |                            |
+| Testing Library        | ^13     |                            |
+| Babel                  | ^7      |                            |
+| Webpack                | ^5      |                            |
 
 ## Feedback and suggestions
 If you want to leave some suggestions or give me constructive feedback please don't hesitate to [file an issue](https://github.com/ioanungurean/forge-react-app/issues/new).

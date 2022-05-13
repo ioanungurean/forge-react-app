@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AlertCard Renders something 1`] = `
+exports[`AlertCard renders and clicks on something 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
