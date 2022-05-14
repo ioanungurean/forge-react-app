@@ -1,4 +1,4 @@
-# Forge React App [![Build Status](https://travis-ci.com/ioanungurean/forge-react-app.svg?branch=master)](https://travis-ci.com/ioanungurean/forge-react-app)
+# Forge React App ![Build Status](https://github.com/ioanungurean/forge-react-app/actions/workflows/build.yml/badge.svg)
 
 Forge React apps with no build configuration. (TypeScript or ECMAScript)
 
