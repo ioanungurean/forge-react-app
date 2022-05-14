@@ -22,6 +22,7 @@
   "bin": {
     "forge-react-app": "./tasks/fra.js"
   },
+  "type": "module",
   "scripts": {
     "test": "npm test --prefix templates/ECMAScript && npm test --prefix templates/TypeScript",
     "build": "npm run build --prefix templates/ECMAScript && npm run build --prefix templates/TypeScript"

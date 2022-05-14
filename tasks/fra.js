@@ -1,10 +1,14 @@
 #!/usr/bin/env node
 
-const path = require("path");
-const fs = require("fs");
-const inquirer = require("inquirer");
-const chalk = require("chalk");
-const spawnSync = require("cross-spawn").sync;
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import { sync } from "cross-spawn";
+import inquirer from "inquirer";
+import chalk from "chalk";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const choices = fs.readdirSync(path.join(__dirname, "..", "templates"));
 const questions = [
@@ -52,7 +56,7 @@ inquirer.prompt(questions).then((answers) => {
 
   const templatePath = path.join(__dirname, "..", "templates", appChoice);
 
-  console.log(chalk.cyan("Forging a new React application..."));
+  console.log(chalk.cyan("Forging a new React application. Please wait..."));
   console.log();
   fs.mkdirSync(appPath);
   buildStructure(templatePath, appName);
@@ -64,7 +68,7 @@ inquirer.prompt(questions).then((answers) => {
   console.log(chalk.cyan("Running npm install..."));
   console.log();
   try {
-    spawnSync("npm", ["install", "--loglevel", "error", "--prefix"], {
+    sync("npm", ["install", "--loglevel", "error", "--prefix"], {
       cwd: appPath,
       stdio: "inherit",
     });
