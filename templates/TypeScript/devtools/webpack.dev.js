@@ -1,5 +1,5 @@
-const { join } = require("path");
 const webpack = require("webpack");
+const { join } = require("path");
 const { merge } = require("webpack-merge");
 
 const common = require("./webpack.common.js");
@@ -14,7 +14,7 @@ module.exports = merge(common, {
       directory: join(__dirname, "dist"),
     },
     historyApiFallback: true,
-    hot: true, // TODO: Add fast refresh when stable
+    hot: true,
     open: true,
     port: 9000,
   },

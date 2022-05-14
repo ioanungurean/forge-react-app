@@ -1,6 +1,6 @@
 # Forge React App ![Build Status](https://github.com/ioanungurean/forge-react-app/actions/workflows/build.yml/badge.svg)
 
-Forge React apps with no build configuration. (TypeScript or ECMAScript)
+Create React apps with no build configuration. (TypeScript or ECMAScript)
 
 - [Creating an App](#creating-an-app) – How to create a new app.
 
@@ -24,7 +24,7 @@ They are preconfigured so that you can focus on the code.
 Just create a project, and you’re good to go.
 
 ## Creating an App
-**You’ll need to have Node 8.10.0 or later on your local development machine** (but it’s not required on the server). You can use [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to easily switch Node versions between different projects.
+**You’ll need to have Node 12 or later on your local development machine** (but it’s not required on the server). You can use [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to easily switch Node versions between different projects.
 
 To create a new app, you may choose one of the following methods:
 
@@ -40,7 +40,6 @@ Inside that directory, it will generate the initial project structure and instal
 my-app
 │   .babelrc
 │   .gitignore
-│   package-lock.json
 │   package.json
 │
 ├───devtools
