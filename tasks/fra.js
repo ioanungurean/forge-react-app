@@ -65,10 +65,10 @@ inquirer.prompt(questions).then((answers) => {
     path.join(appPath, ".gitignore")
   );
 
-  console.log(chalk.cyan("Running npm install..."));
+  console.log(chalk.cyan("Installing dependencies..."));
   console.log();
   try {
-    sync("npm", ["install", "--loglevel", "error", "--prefix"], {
+    sync("npm", ["ci", "--loglevel", "error", "--prefix"], {
       cwd: appPath,
       stdio: "inherit",
     });
