@@ -98,7 +98,7 @@ Your app is ready to be deployed.
 | ---------------------- |---------|----------------------------|
 | React                  | ^18     |                            |
 | TypeScript             | ^4      | for the TypeScript version |
-| Jest                   | ^28     |                            |
+| Jest                   | ^29     |                            |
 | Testing Library        | ^13     |                            |
 | Babel                  | ^7      |                            |
 | Webpack                | ^5      |                            |
